@@ -5,11 +5,13 @@ $red: HSLA(0, 100%, 34%, 1);
 
 .leftStoryboard {
   position: relative;
-  min-height: 250px; /* This part sucks */
+  min-height: 250px;
   clear: both;
+  width: 66%;
   margin: 25px 0;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   height: 500px;
+  float: left;
 }
 .ourStory, .menu, .reservations {
   float: left;
