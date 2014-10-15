@@ -1,5 +1,6 @@
 $border: HSLA(0, 0%, 70%, 1);
-
+$charcoal: HSLA(0, 0%, 40%, 1);
+$red: HSLA(0, 100%, 34%, 1);
 
 
 .leftStoryboard {
@@ -13,13 +14,14 @@ $border: HSLA(0, 0%, 70%, 1);
   float: left;
 }
 .ourStory label, .menu label, .reservations label {
-  padding: 10px;
+  padding: 7px;
   border: 1px solid $border;
   margin-left: -1px;
   position: relative;
   left: 1px;
   font-family: 'Merriweather', serif;
   font-weight: bold;
+  color: $red;
 }
 
 .ourStory [type=radio] {
@@ -38,15 +40,16 @@ $border: HSLA(0, 0%, 70%, 1);
   position: absolute;
   top: 28px;
   left: 0;
-  background: white;
+  background: HSLA(0, 0%, 98%, 1);
   right: 0;
   bottom: 0;
   padding: 20px;
-  //border: 1px solid #ccc;
+  color: $charcoal;
 }
+
 [type=radio]:checked ~ label {
-  background: white;
-  border-bottom: 1px solid white;
+  background: HSLA(0, 0%, 98%, 1);
+  border-bottom: none;
   z-index: 2;
 }
 [type=radio]:checked ~ label ~ .content {
