@@ -97,21 +97,38 @@
           </div> <!-- end menu -->
 
           <div class="reservations"> <!-- start reservations -->
-              <form>
-                <h2>Reservations</h2>
-                <p><label for="fullName">Full Name:</label>
-                  <input type="text" id="fullName"></p>
-
-                <p><label for="numGuests">Number of Guests:</label>
-                  <textarea id="text_area"></textarea></p>
-
-              </form>
-            </fieldset>
             <input type="radio" id="tab-3" name="tab-group-1">
               <label for="tab-3">Reservations</label>
                <div class="content">
-                   <P>NAME<INPUT TYPE="TEXT" SIZE="20" MAXLENGTH="99" />
-               </div>
+                 <form class="form">
+
+    <p class="name">
+      <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+    </p>
+
+    <p class="email">
+      <label for="guests">Number of Guests</label>
+        <input type="text" name="guests" id="guests" />
+    </p>
+
+    <p class="date">
+      <label for="date">Date</label>
+        <input type="text" name="date" id="date" />
+    </p>
+
+    <p class="text">
+      <label for="notes">Special Notes</label>
+        <textarea name="text"></textarea>
+    </p>
+
+    <p class="submit">
+        <input type="submit" value="Reserve Table" />
+    </p>
+
+</form>
+
+               </div><!-- end of content3 -->
           </div> <!-- end of reservations -->
 
         </div> <!-- end of main left storyboard -->
