@@ -18,14 +18,14 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
   /*border-style:solid;*/
 
   div{
-    width:30%;
+    width:33%;
     border-style: solid;
     border-color:$border;
     border-width:1px;
     border-radius:5px;
     height:100%;
     float:left;
-    margin-right:39px;
+    margin-right:6px;
     background-color:$newsBoxes;
     padding:5px;
 
@@ -44,8 +44,5 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     }
 
   }
-  #location{
-    float:right;
-    margin:0;
-  }
+
 }
