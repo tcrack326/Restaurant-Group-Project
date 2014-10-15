@@ -31,32 +31,88 @@
         </div>
         <div class="socialMedia">
           <ul>
+            <span>follow us:</span>
             <li><a href="#"><img src='https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx.png'></a></li>
             <li><a href="#"><img src='http://www.ihd-wallpapers.com/wp-content/uploads/2014/09/Facebook_logo-2.jpg'></a></li>
-            <li><a href="#"><img src='http://dotherightthinginc.org/wp-content/uploads/2014/03/ig-logo.jpg'></a></li>
+            <li><a href="#"><img src='http://www.gwdhumanesociety.org/wp-content/uploads/2014/01/Instagram-Logo-1.jpg'></a></li>
           </ul>
         </div>
       </div> <!-- end of header -->
 
       <div class="heroUnit"> <!-- big front picture -->
-        <img src="http://www.ondaverde.it/images/pfoto-gallery/image_72.jpg" />
+        <img src="https://curtisvoisin.files.wordpress.com/2012/05/dscn0116.jpg" />
       </div> <!-- end of heroUnit -->
 
       <div class="newsBar"> <!-- middle three news boxes -->
-        <div class="latestNews"></div>
-        <div class="todaysSpecial"></div>
-        <div class="location"></div>
+        <div class="leftBarBox" id="latestNews">
+          <h4>Latest News</h4>
+          <p>
+
+          </p>
+
+        </div> <!-- latest news -->
+        <div class="leftBarBox" id="todaysSpecial">
+          <h4>Todays Special</h4>
+          <img id="specialsImage" src=""/>
+          <span>special......$39</span>
+          <p>
+
+          </p>
+
+        </div><!-- today's special -->
+        <div class="rightBarBox" id="location">
+          <h4>Location</h4>
+
+        </div> <!-- end location -->
       </div> <!-- end of middle news boxes -->
 
       <div class="mainContent"> <!-- main body -->
         <div class="leftStoryboard"> <!-- main left storyboard with tabs -->
           <div class="ourStory"> <!-- story start -->
 
+            <input type="radio" id="tab-1" name="tab-group-1" checked>
+              <label for="tab-1">Our Story</label>
+
+                <div class="content">
+                  <p>Founded by Monsieur Park and le Chef Griffeth, Le Cochon de Fer was opened in 2010.
+                  </p>
+                  <p>The idea came about when Monsieru Paul, from Big Major Cay island, was becoming over-populated with his sounder of swine that he decided the best way to control his pig population was to make his overabundance available to the people of the mainland. With the help of his good friend and now business partner chef Griffeth, they created a seasonally exquisite menu filled with fresh, locally sourced ingredients, spices and of course, pork. The result is food that is honest, straightforward and pays homage to the bounty of Major Cay Island.
+                  </p>
+                  <p>The restaurant became a huge hit from the beginning, with eager mainlanders sometimes waiting hours for an opportunity to experience Le cochon de fer with its warm hues, soft lighting and relaxed ambience that invited guests to settle in, get comfortable, and have a great time.
+                  </p>
+                  <p>
+      The le Cochon de Fer experience is about more than just food.
+                  </p>
+                </div>
+
           </div> <!-- story end -->
+
           <div class="menu"> <!-- start menu -->
-            <p>
+            <input type="radio" id="tab-2" name="tab-group-1">
+              <label for="tab-2">Menu</label>
+
+                <div class="content">
+                    nummy in my tummy
+                </div>
           </div> <!-- end menu -->
+
           <div class="reservations"> <!-- start reservations -->
+              <form>
+                <h2>Reservations</h2>
+                <p><label for="fullName">Full Name:</label>
+                  <input type="text" id="fullName"></p>
+
+                <p><label for="numGuests">Number of Guests:</label>
+                  <textarea id="text_area"></textarea></p>
+
+              </form>
+            </fieldset>
+            <input type="radio" id="tab-3" name="tab-group-1">
+              <label for="tab-3">Reservations</label>
+
+               <div class="content">
+                   Put a reservation form in me
+               </div>
           </div> <!-- end of reservations -->
 
         </div> <!-- end of main left storyboard -->
