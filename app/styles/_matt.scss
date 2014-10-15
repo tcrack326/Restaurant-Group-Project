@@ -49,18 +49,33 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
 #todaysSpecial{
 
   #specialsImage{
-  border-style: solid;
-  display: block;
-  width: 95%;
-  height: 60%;
-  margin-top: 16px;
-  margin-bottom: 7px;
-  margin-left: auto;
-  margin-right: auto;
+    border-style: solid;
+    display: block;
+    width: 95%;
+    height: 60%;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
   }
   span{
     margin-left: auto;
     margin-right: auto;
   }
+
+}
+#location{
+
+  #googleMaps{
+    border-style: solid;
+    display: block;
+    width: 95%;
+    height: 60%;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-right: auto;
+  }
+
 
 }
