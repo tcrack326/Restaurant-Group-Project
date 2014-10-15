@@ -19,17 +19,20 @@ h1 {
 /* Social Media */
 .socialMedia {
   float: right;
-  width: 30%;
   display: block;
   font-family: 'Merriweather', serif;
   font-size: .2em;
-  padding: 1.5em;
+  margin: 75px auto 0px auto;
+  padding: 1%;
   color: $charcoal;
+  /* border: 1px solid \$border; */
+  background-color: HSLA(0, 0%, 97%, 1);
+  overflow: auto;
   span {
-    line-height: 2em;
   }
   ul {
     display: block;
+    padding-left: 0px;
   }
   li {
     list-style-type: none;
