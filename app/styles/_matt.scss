@@ -7,13 +7,12 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
   img{
     display: block;
     margin: 0 auto;
-    border-radius:5px;
+  /*  border-radius:5px;*/
   }
 }
 .newsBar{
   display:block;
   margin:10px auto;
-  max-width:800px;
   height:250px;
   /*border-style:solid;*/
 
@@ -22,10 +21,11 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     border-style: solid;
     border-color:$border;
     border-width:1px;
-    border-radius:5px;
+    /*border-radius:5px;*/
     height:100%;
     float:left;
-    margin-right:6px;
+    margin-right:2px;
+    margin-left:2px;
     background-color:$newsBoxes;
     padding:5px;
 
@@ -43,6 +43,24 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
 
     }
 
+  }
+
+}
+#todaysSpecial{
+
+  #specialsImage{
+  border-style: solid;
+  display: block;
+  width: 95%;
+  height: 60%;
+  margin-top: 16px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  span{
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
