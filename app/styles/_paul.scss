@@ -4,9 +4,9 @@ $border: HSLA(0, 0%, 70%, 1);
 
 /* Header */
 .header {
-  font-size: 8em;
+  font-size: 5em;
   font-family: 'Tangerine', cursive, serif;
-  line-height: 0.5em;
+  line-height: 0em;
   overflow: auto;
   border-bottom: 1px solid $border;
   margin-bottom: 10px;
@@ -21,7 +21,6 @@ h1 {
   float: right;
   display: block;
   font-family: 'Merriweather', serif;
-  font-size: .2em;
   margin: 75px auto 0px auto;
   padding: 1%;
   color: $charcoal;
@@ -29,6 +28,7 @@ h1 {
   background-color: HSLA(0, 0%, 97%, 1);
   overflow: auto;
   span {
+    font-size: .3em;
   }
   ul {
     display: block;
@@ -48,5 +48,6 @@ h1 {
 .heroUnit {
   img {
     width: 100%;
+    height: 500px;
   }
 }
