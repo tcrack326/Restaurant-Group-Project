@@ -1,5 +1,6 @@
 $charcoal: HSLA(0, 0%, 40%, 1);
 $red: HSLA(0, 100%, 34%, 1);
+$border: HSLA(0, 0%, 70%, 1);
 
 /* Header */
 .header {
@@ -7,7 +8,8 @@ $red: HSLA(0, 100%, 34%, 1);
   font-family: 'Tangerine', cursive, serif;
   line-height: 0.5em;
   overflow: auto;
-  border-bottom: 1px solid $charcoal;
+  border-bottom: 1px solid $border;
+  margin-bottom: 10px;
 }
 h1 {
   color: $red;
@@ -19,6 +21,13 @@ h1 {
   float: right;
   width: 30%;
   display: block;
+  font-family: 'Merriweather', serif;
+  font-size: .2em;
+  padding: 1.5em;
+  color: $charcoal;
+  span {
+    line-height: 2em;
+  }
   ul {
     display: block;
   }
