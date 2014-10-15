@@ -1,12 +1,13 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 $border: HSLA(0, 0%, 70%, 1);
-
+$newsBoxes: HSLA(0, 0%, 92%, 1);
 .heroUnit{
   margin-top:10px;
   img{
     display: block;
     margin: 0 auto;
+    border-radius:5px;
   }
 }
 .newsBar{
@@ -19,10 +20,13 @@ $border: HSLA(0, 0%, 70%, 1);
   div{
     width:30%;
     border-style: solid;
+    border-color:$border;
+    border-width:1px;
+    border-radius:5px;
     height:100%;
     float:left;
     margin-right:39px;
-    background-color:$border;
+    background-color:$newsBoxes;
     padding:5px;
 
     h4{
