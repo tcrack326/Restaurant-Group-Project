@@ -8,24 +8,28 @@
 @import 'wendy';
 
 // Custom Styles
+$charcoal: HSLA(0, 0%, 40%, 1);
+$red: HSLA(0, 100%, 34%, 1);
+
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  font-size: 62.5%;
+  color: $red;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+.header {
+  font-size: 3em;
+}
+img {
+  max-width: 100;
+}
+
+.logo img {
+  width: 85%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
 }
