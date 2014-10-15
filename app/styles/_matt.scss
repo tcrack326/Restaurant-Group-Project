@@ -46,6 +46,17 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
   }
 
 }
+#latestNews{
+  p{
+    display: block;
+    width: 95%;
+    height: 60%;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #todaysSpecial{
 
   #specialsImage{
@@ -76,6 +87,26 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     margin-left: 10px;
     margin-right: auto;
   }
+  .address{
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .contactInfo{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
 
+    display:block;
+    list-style:none;
+    height:15px;
+    clear:both;
+    li{
+      float:left;
+      margin-right:10px;
+
+  }
+  }
 
 }
