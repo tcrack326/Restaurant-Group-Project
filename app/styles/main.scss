@@ -19,14 +19,16 @@ body {
 }
 
 .header {
-  font-size: 3em;
+  font-size: 8em;
+  font-family: 'Tangerine', cursive, serif;
+  line-height: 1.5em;
 }
 img {
   max-width: 100;
 }
 
-.logo img {
-  width: 85%;
+.logo h5 {
+  text-align: right;
 }
 
 .container {
