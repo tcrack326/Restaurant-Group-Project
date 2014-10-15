@@ -5,7 +5,9 @@ $red: HSLA(0, 100%, 34%, 1);
 .header {
   font-size: 8em;
   font-family: 'Tangerine', cursive, serif;
-  line-height: 1.5em;
+  line-height: 0.5em;
+  overflow: auto;
+  border-bottom: 1px solid $charcoal;
 }
 h1 {
   color: $red;
@@ -16,15 +18,16 @@ h1 {
 .socialMedia {
   float: right;
   width: 30%;
-  display: inline-block;
+  display: block;
   ul {
     display: block;
   }
   li {
     list-style-type: none;
-    display: block;
+    display: inline;
     img {
-      width: 12%;
+      width: 25px;
+      height: 25px;
     }
   }
 }
