@@ -7,7 +7,7 @@ $red: HSLA(0, 100%, 34%, 1);
   position: relative;
   min-height: 250px;
   clear: both;
-  width: 66%;
+  width: 80%;
   margin: 25px 0;
   /* margin-left: 50px; */
   height: 500px;
@@ -38,7 +38,10 @@ $red: HSLA(0, 100%, 34%, 1);
 .reservations [type=radio] {
   display: none;
 }
-
+.mainContent{
+  display:block;
+  overflow:auto;
+}//fixed this to push the footer down
 .content {
   position: absolute;
   top: 28px;
