@@ -50,20 +50,12 @@
     <!--  </div> <!-- end of heroUnit -->
 
       <div class="newsBar"> <!-- middle three news boxes -->
-        <div class="leftBarBox" id="latestNews">
-          <h4>Latest News</h4>
-          <p>
-            Le Cochon de Fer maintains its three Micheline star rating for four years in a row!
-
-
-          </p>
+        <div class="leftBarBox updatingNews" id="latestNews">
 
         </div> <!-- latest news -->
-        <div class="leftBarBox" id="todaysSpecial">
-          <h4>Todays Special</h4>
-          <img id="specialsImage" src=""/>
-          <span>special......$39</span>
-          <p>
+
+
+        <div class="leftBarBox updatingSpecial" id="todaysSpecial">
 
           </p>
 
@@ -263,7 +255,18 @@
   </li>
 </script>
 
+<script id="newsTemplate" type="text/template">
+  <h4><%= title %></h4>
+  <p><%= post %></p>
+</script>
 
+<script id="specialTemplate" type="text/template">
+  <h4></h4>
+  <img id="specialsImage" src=""/>
+  <span></span>
+  <p>
+
+</script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
