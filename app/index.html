@@ -105,6 +105,7 @@
                 </div>
 
           </div> <!-- story end -->
+<!-- +++++++++++++++++++++++++++++++++++++++++ -->
 
           <div class="menu"> <!-- start menu -->
             <input type="radio" id="tab-2" name="tab-group-1">
@@ -117,6 +118,7 @@
                 </div>
           </div> <!-- end menu -->
 
+<!-- +++++++++++++++++++++++++++++++++++++++++ -->
           <div class="reservations"> <!-- start reservations -->
             <input type="radio" id="tab-3" name="tab-group-1">
               <label for="tab-3">Reservations</label>
@@ -173,7 +175,13 @@
   <span><%= price %></span>
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats"></div>
+    <div class="foodStats">
+      <%= $.getJSON(menuURL).done( function(menu_data) {
+        menu_data.appetizers.forEach( function (apps_data) {
+          if (apps_data.allergies === 1) { %>
+        <p>You're going to die</p>
+      <%= };});}); %>
+    </div>
   </div>
 </script>
 
