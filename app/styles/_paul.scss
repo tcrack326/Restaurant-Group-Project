@@ -2,23 +2,49 @@ $charcoal: HSLA(0, 0%, 40%, 1);
 $red: HSLA(0, 100%, 34%, 1);
 $border: HSLA(0, 0%, 70%, 1);
 
+
 /* Header */
 .header {
   font-size: 5em;
   font-family: 'Tangerine', cursive, serif;
   line-height: 0em;
-  overflow: auto;
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid HSLA(0, 0%, 70%, 1);
   margin-bottom: 10px;
+  background-image: url('https://curtisvoisin.files.wordpress.com/2012/05/dscn0116.jpg');
+  background-size:1425px 700px;
+  max-width:1425px;height: 700px;
+  position:relative;
+
+
+  .topSpot{
+    display:block;
+    height:700px;
+    background-color:$red;
+    opacity:.7;
+
+  }
+  /*img{
+    position:relative;
+    height:700px;
+    width:1425px;
+
+}*/
 
 }
-h1 {
-  color: $red;
-  float: left;
-  margin-left:25px;
-  margin-top:80px;
-}
+.logo{
 
+
+  h1 {
+    color: white;
+    float: left;
+    margin-top: 80px;
+    position: absolute;
+    font-size: 3em;
+    margin: 0.67em 0;
+    margin-left: 25px;
+    bottom: 350px;
+  }
+}
 /* Social Media */
 .socialMedia {
   float: right;
@@ -28,18 +54,21 @@ h1 {
   padding: 1%;
   color: $charcoal;
   /* border: 1px solid \$border; */
-  background-color: HSLA(0, 0%, 97%, 1);
   overflow: auto;
   padding-bottom:0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
   span {
     font-size: .3em;
+    color:white;
   }
   ul {
     display: block;
     padding-left: 0px;
-    margin-bottom:0;
-    margin-top: 100px;
-    margin-right: 10px;
+    margin:0;
+
   }
   li {
     list-style-type: none;
