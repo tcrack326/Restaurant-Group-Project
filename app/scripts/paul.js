@@ -1,4 +1,26 @@
 var menuURL = "http://restaurantapi.apiary.io/menu";
+    latestURL = "http://restaurantapi.apiary.io/news/latest";
+    specialURL = "http://restaurantapi.apiary.io/menu/special"
+
+
+// Start Templating of Updating News Boxes
+var latest_Template = $('#newsTemplate').html();
+    latest_Render = _.template(latest_Template);
+    special_Template = $('#specialTemplate').html();
+    special_Render = _.template(special_Template);
+
+$.getJSON(latestURL).done( function(news) {
+
+  $('.updatingNews').html(special_Render(news));
+});
+
+
+
+
+
+
+
+
 
 // Start of Templating of Appetizers
 var apps_Template = $('#menuApps').html();
