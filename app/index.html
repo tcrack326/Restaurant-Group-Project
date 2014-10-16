@@ -176,11 +176,7 @@
   <div class="menuDesc">
     <p><%= description %></p>
     <div class="foodStats">
-      <%= $.getJSON(menuURL).done( function(menu_data) {
-        menu_data.appetizers.forEach( function (apps_data) {
-          if (apps_data.allergies === 1) { %>
-        <p>You're going to die</p>
-      <%= };});}); %>
+      <div><span><%= allergies %></span></div>
     </div>
   </div>
 </script>
