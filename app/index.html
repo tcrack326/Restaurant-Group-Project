@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>le Cochon de Fer</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="header"> <!-- header start -->
+      <div class="logo">
+        <h1>le Cochon de Fer</h1>
+      </div>
+      <div class="socialMedia">
+        <ul>
+          <span>follow us:</span>
+          <li><a href="#"><img src='https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx.png'></a></li>
+          <li><a href="#"><img src='http://www.ihd-wallpapers.com/wp-content/uploads/2014/09/Facebook_logo-2.jpg'></a></li>
+          <li><a href="#"><img src='http://www.gwdhumanesociety.org/wp-content/uploads/2014/01/Instagram-Logo-1.jpg'></a></li>
+        </ul>
+      </div>
+    </div> <!-- end of header -->
+    <div class="container">
+
+
+      <div class="heroUnit"> <!-- big front picture -->
+        <img src="https://curtisvoisin.files.wordpress.com/2012/05/dscn0116.jpg" />
+      </div> <!-- end of heroUnit -->
+
+      <div class="newsBar"> <!-- middle three news boxes -->
+        <div class="leftBarBox" id="latestNews">
+          <h4>Latest News</h4>
+          <p>
+            Le Cochon de Fer maintains its three Micheline star rating for four years in a row!
+
+
+          </p>
+
+        </div> <!-- latest news -->
+        <div class="leftBarBox" id="todaysSpecial">
+          <h4>Todays Special</h4>
+          <img id="specialsImage" src=""/>
+          <span>special......$39</span>
+          <p>
+
+          </p>
+
+        </div><!-- today's special -->
+        <div class="rightBarBox" id="location">
+          <h4>Location</h4>
+          <div id="googleMaps">
+            <!--<iframe>
+            width="450"
+            height="250"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/search?key=API_KEY&q=record+stores+in+Seattle">
+          </iframe>-->
+
+          </div>
+          <span class="address">123 Main Stree,New York NY 1234</span>
+          <ul class="contactInfo">
+            <li>555-555-1234</li>
+            <li>555-555-1234</li>
+            <li>Map</li>
+            <li>Directions</li>
+          </ul><!--contactInfo-->
+
+        </div> <!-- end location -->
+      </div> <!-- end of middle news boxes -->
+
+      <div class="mainContent"> <!-- main body -->
+        <div class="leftStoryboard"> <!-- main left storyboard with tabs -->
+          <div class="ourStory"> <!-- story start -->
+
+            <input type="radio" id="tab-1" name="tab-group-1" checked>
+              <label for="tab-1">Our Story</label>
+
+                <div class="content">
+                  <p>Founded by Monsieur Park and le Chef Griffeth, Le Cochon de Fer was opened in 2010.
+                  </p>
+                  <p>The idea came about when Monsieru Paul, from Big Major Cay island, was becoming over-populated with his sounder of swine that he decided the best way to control his pig population was to make his overabundance available to the people of the mainland. With the help of his good friend and now business partner chef Griffeth, they created a seasonally exquisite menu filled with fresh, locally sourced ingredients, spices and of course, pork. The result is food that is honest, straightforward and pays homage to the bounty of Major Cay Island.
+                  </p>
+                  <p>The restaurant became a huge hit from the beginning, with eager mainlanders sometimes waiting hours for an opportunity to experience Le cochon de fer with its warm hues, soft lighting and relaxed ambience that invited guests to settle in, get comfortable, and have a great time.
+                  </p>
+                  <p>
+      The le Cochon de Fer experience is about more than just food.
+                  </p>
+                </div>
+
+          </div> <!-- story end -->
+<!-- +++++++++++++++++++++++++++++++++++++++++ -->
+
+          <div class="menu"> <!-- start menu -->
+            <input type="radio" id="tab-2" name="tab-group-1">
+              <label for="tab-2">Menu</label>
+
+                <div class="content itemsMenu">
+                  <h2 class="appsMenu">Appetizers</h2>
+                  <h2 class="entreeMenu">Entrees</h2>
+                  <h2 class="sidesMenu">Sides A La Carte</h2>
+                </div>
+          </div> <!-- end menu -->
+
+<!-- +++++++++++++++++++++++++++++++++++++++++ -->
+          <div class="reservations"> <!-- start reservations -->
+            <input type="radio" id="tab-3" name="tab-group-1">
+              <label for="tab-3">Reservations</label>
+               <div class="content">
+                 <form class="form">
+
+                  <p class="name">
+                    <label for="name">Name</label>
+                      <input type="text" name="name" id="name" />
+                  </p>
+
+                  <p class="email">
+                    <label for="guests">Number of Guests</label>
+                      <input type="text" name="guests" id="guests" />
+                  </p>
+
+                  <p class="date">
+                    <label for="date">Date</label>
+                      <input type="text" name="date" id="date" />
+                  </p>
+
+                  <p class="text">
+                    <label for="notes">Special Notes</label>
+                      <textarea name="text"></textarea>
+                  </p>
+
+                  <p class="submit">
+                      <input type="submit" value="Reserve Table" />
+                  </p>
+
+              </form>
+
+             </div><!-- end of content3 -->
+          </div> <!-- end of reservations -->
+
+        </div> <!-- end of main left storyboard -->
+        <div class="foodPics">
+          <h4>Food Pics</h4><!-- food pictures on right side -->
+          <ul class="foodImgList">
+            <li class="foodImg"></li>
+          </ul >
+        </div> <!-- end of food pictures on right side -->
+      </div> <!-- end of main content -->
+
+    </div><!--end of container -->
+    <div class="footer"><!-- footer -->
+      <span>le Cochon de Fer</span>
+      <span class="date">2010</span>
+      <p>...qui va faire cochon</p>
+    </div> <!-- end of footer -->
+
+<script id="menuApps" type="text/template">
+  <h3><%= item %></h3>
+  <span><%= price %></span>
+  <div class="menuDesc">
+    <p><%= description %></p>
+    <div class="foodStats">
+      <%= $.getJSON(menuURL).done( function(menu_data) {
+        menu_data.appetizers.forEach( function (apps_data) {
+          if (apps_data.allergies === 1) { %>
+        <p>You're going to die</p>
+      <%= };});}); %>
+    </div>
+  </div>
+</script>
+
+<script id="menuEntrees" type="text/template">
+  <h3><%= item %></h3>
+  <span><%= price %></span>
+  <div class="menuDesc">
+    <p><%= description %></p>
+    <div class="foodStats"></div>
+  </div>
+</script>
+
+<script id="menuSides" type="text/template">
+  <h3><%= item %></h3>
+  <span><%= price %></span>
+  <div class="menuDesc">
+    <p><%= description %></p>
+    <div class="foodStats"></div>
+  </div>
+</script>
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="scripts/jquery.xml2json.js"</script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/matt.js"></script>
+        <script src="scripts/paul.js"></script>
+        <script src="scripts/tom.js"></script>
+        <script src="scripts/wendy.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+  </body>
+</html>
