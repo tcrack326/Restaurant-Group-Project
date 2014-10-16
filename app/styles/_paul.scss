@@ -99,9 +99,24 @@ h3 {
   padding-top: 10px;
   display: block;
   clear: both;
+  min-width: 100%;
+  overflow-x: hidden;
+  sup:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  padding-left: 0px;
+  line-height: 1.8em;
+  content:
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+  }
   span {
     float: right;
     font-size: .6em;
+
   }
 }
 .appsMenu, .entreeMenu, .sidesMenu {
@@ -109,9 +124,13 @@ h3 {
 }
 .menuDesc {
   float: left;
-  max-width: 75%;
+  width: 85%;
+  padding-left: 10%;
+  padding-right: 5%;
   border-right: 1px solid $border;
+  font-size: 2em;
 }
 .foodStats {
   padding-bottom: 20px;
+  padding-left: 25%;
 }
