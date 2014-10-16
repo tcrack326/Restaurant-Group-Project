@@ -12,9 +12,6 @@ var apps_Template = $('#menuApps').html();
 $.getJSON(menuURL).done( function(menu_data) {
   menu_data.appetizers.forEach( function (apps_data) { // appetizers
     $('.itemsMenu .appsMenu').append(apps_Render(apps_data));
-    // if (apps_data.allergies === 1) {
-    //   $('.foodStats').append("sick")
-    // };
   });
   menu_data.entrees.forEach( function (entree_data) { // Entrees
     $('.itemsMenu .entreeMenu').append(entree_Render(entree_data));

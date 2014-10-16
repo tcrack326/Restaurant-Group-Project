@@ -176,7 +176,18 @@
   <div class="menuDesc">
     <p><%= description %></p>
     <div class="foodStats">
-      <div><span><%= allergies %></span></div>
+        <% if (allergies) { %>
+        <span>A</span>
+        <% } %>
+        <% if (favorite) { %>
+        <span>F</span>
+        <% } %>
+        <% if (spicy) { %>
+        <span>S</span>
+        <% } %>
+        <% if (vegan) { %>
+        <span>V</span>
+        <% } %>
     </div>
   </div>
 </script>
@@ -186,7 +197,20 @@
   <span><%= price %></span>
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats"></div>
+    <div class="foodStats">
+        <% if (allergies) { %>
+        <span>A</span>
+        <% } %>
+        <% if (favorite) { %>
+        <span>F</span>
+        <% } %>
+        <% if (spicy) { %>
+        <span>S</span>
+        <% } %>
+        <% if (vegan) { %>
+        <span>V</span>
+        <% } %>
+    </div>
   </div>
 </script>
 
@@ -195,7 +219,20 @@
   <span><%= price %></span>
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats"></div>
+    <div class="foodStats">
+        <% if (allergies) { %>
+        <span>A</span>
+        <% } %>
+        <% if (favorite) { %>
+        <span>F</span>
+        <% } %>
+        <% if (spicy) { %>
+        <span>S</span>
+        <% } %>
+        <% if (vegan) { %>
+        <span>V</span>
+        <% } %>
+    </div>
   </div>
 </script>
 
