@@ -1,7 +1,6 @@
 //global variable(s)
 var imageObjectsArray = []; //needed to store the pics from Flickr in the ajax call.
 
-
 /*=============================================================================================
 request photos from Flickr
 =============================================================================================*/
@@ -10,20 +9,17 @@ request photos from Flickr
 //method(s) for requests
 var getMyFavs = "flickr.favorites.getList";
 
-//Url for request - api key and token are used for user tmccracken209 - FOR FUTURE USE HIDE OR REMOVE - DO NOT MAKE PUBLIC!!!
-var flickrUrl = "https://api.flickr.com/services/rest/?method=" + getMyFavs + "&api_key=83d50fa32805ad108edc1de65c199465&format=rest&auth_token=72157648372758390-e16def6bf3ad7b29&api_sig=5380a6b9617e6f35a3a8949850b63a2d";
+//Url for request - api key and token are used for user tmccracken209 - FOR FUTURE USE HIDE OR REMOVE - DO NOT MAKE PUBLIC!!! For json data from flickr: &format=json&nojsoncallback=1
+var flickrUrl = "https://api.flickr.com/services/rest/?method=" + getMyFavs + "&api_key=1e152e137f1bc9338ea97cd8ef12250a&format=json&nojsoncallback=1&auth_token=72157648381225457-c32ebb6d42b53704&api_sig=47621587451677dc72bbde962512529f";
 
 //make the AJAX call with jQuery
 var flickrPhotos = $.ajax({
   url: flickrUrl,
-  dataType: 'xml'
+  dataType: 'json'
 }).done(function(data){
-  //convert to JSON
-  var jsonData = $.xml2json(data);
-
   //construct the objects with urls and descriptions for the images and push to array.
   //load each photo in the array
-  jsonData.photos.photo.forEach( function(imagePhoto) {
+  data.photos.photo.forEach( function(imagePhoto) {
     var imageDescription = imagePhoto.title;
     var imageID = imagePhoto.id;
     var imageSecret = imagePhoto.secret;
@@ -34,7 +30,7 @@ var flickrPhotos = $.ajax({
     imageObjectsArray.push(object);
   });
 }).fail(function(){
-  //console.log("failure to get photos");
+  console.log("failure to get photos");
 }).complete(function(){
   //console.log("request completed");
 });
