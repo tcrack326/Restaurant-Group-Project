@@ -41,7 +41,7 @@ $red: HSLA(0, 100%, 34%, 1);
 }
 .mainContent{
   display:block;
-  overflow:auto;
+  //overflow:auto;
   width: 100%
 }//fixed this to push the footer down
 .content {
@@ -100,6 +100,7 @@ input, textarea {
     box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
     -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    color: $red;
     }
 
 textarea {
@@ -120,6 +121,7 @@ input:focus, textarea:focus {
     color: $charcoal;
     border: none;
     float:left;
+    width: 200px;
     }
 
 .submit input {
@@ -144,8 +146,10 @@ input:focus, textarea:focus {
   padding: 20px;
   color: $charcoal;
   font-size: .5em;
+  p {
+    width: 30px;
+  }
 }
-
-.mydropdown {
-  size: 25px;
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
