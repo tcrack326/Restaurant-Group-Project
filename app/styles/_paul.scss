@@ -10,10 +10,13 @@ $border: HSLA(0, 0%, 70%, 1);
   overflow: auto;
   border-bottom: 1px solid $border;
   margin-bottom: 10px;
+
 }
 h1 {
   color: $red;
   float: left;
+  margin-left:25px;
+  margin-top:80px;
 }
 
 /* Social Media */
@@ -21,18 +24,22 @@ h1 {
   float: right;
   display: block;
   font-family: 'Merriweather', serif;
-  margin: 75px auto 0px auto;
+  margin: 0 auto 0px auto;
   padding: 1%;
   color: $charcoal;
   /* border: 1px solid \$border; */
   background-color: HSLA(0, 0%, 97%, 1);
   overflow: auto;
+  padding-bottom:0;
   span {
     font-size: .3em;
   }
   ul {
     display: block;
     padding-left: 0px;
+    margin-bottom:0;
+    margin-top: 100px;
+    margin-right: 10px;
   }
   li {
     list-style-type: none;

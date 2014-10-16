@@ -46,21 +46,97 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
   }
 
 }
+#latestNews{
+  p{
+    display: block;
+    width: 95%;
+    height: 60%;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #todaysSpecial{
 
   #specialsImage{
-  border-style: solid;
-  display: block;
-  width: 95%;
-  height: 60%;
-  margin-top: 16px;
-  margin-bottom: 7px;
-  margin-left: auto;
-  margin-right: auto;
+    border-style: solid;
+    display: block;
+    width: 95%;
+    height: 60%;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
   }
   span{
     margin-left: auto;
     margin-right: auto;
   }
 
+}
+#location{
+
+  #googleMaps{
+    border-style: solid;
+    display: block;
+    width: 95%;
+    height: 60%;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    margin-right: auto;
+  }
+  .address{
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .contactInfo{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:76px;
+    display:block;
+    list-style:none;
+    height:15px;
+    clear:both;
+    li{
+      float:left;
+      margin-right:10px;
+
+  }
+  }
+
+}
+.foodPics{
+  display:block;
+  float:right;
+  /*border-style:solid;*/
+  border-width:1px;
+  width:20%;
+  text-align:center;
+
+  h4{
+    font-size:30px;
+    margin-top:0;
+    margin-bottom:0;
+
+  }
+  .foodImgList{
+    padding:0;
+  .foodImg{
+    height:200px;
+    width:200px;
+    border-style:solid;
+    border-width:1px;
+    border-color:$border;
+    display:block;
+    float:right;
+    margin-bottom:25px;
+  }
+
+
+  }
 }

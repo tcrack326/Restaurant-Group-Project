@@ -24,3 +24,32 @@ img {
   margin: 0 auto;
   width: 1200px;
 }
+.footer{
+  border-top-style:solid;
+  border-width:1px;
+  border-color:$border;
+  clear:both;
+  height:100px;
+  background-color:$red;
+
+  span{
+    display: block;
+    float: left;
+    margin-top: 46px;
+    margin-left: 15px;
+    font-family: 'Tangerine', cursive, serif;
+    font-size: 50px;
+  }
+  .date{
+    font-size: 27px;
+    margin-top: 63px;
+  }
+  p{
+    float: right;
+    font-family: 'Tangerine', cursive, serif;
+    font-size: 26px;
+    margin-top: 62px;
+    margin-right: 10px;
+
+  }
+}
