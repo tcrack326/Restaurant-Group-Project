@@ -60,3 +60,31 @@ h1 {
 }
 
 /* Menu STYLEZ */
+h2 {
+  font-size: 4em;
+  border-bottom: 1px solid $border;
+  font-weight: bold;
+  padding-bottom: 10px;
+  clear: both;
+}
+h3 {
+  font-size: 3.5em;
+  padding-left: 3%;
+  display: block;
+  clear: both;
+  span {
+    float: right;
+    font-size: .6em;
+  }
+}
+.appsMenu {
+  clear: both;
+}
+.menuDesc {
+  float: left;
+  max-width: 75%;
+  border-right: 1px solid $border;
+}
+.foodStats {
+  padding-bottom: 20px;
+}
