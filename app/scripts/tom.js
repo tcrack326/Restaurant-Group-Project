@@ -1,5 +1,8 @@
 //global variable(s)
 var imageObjectsArray = []; //needed to store the pics from Flickr in the ajax call.
+//template for pics
+//var picTemplate = $('#foodPics').html();
+//var picRenderTemplate = _.template(picTemplate);
 
 /*=============================================================================================
 request photos from Flickr
@@ -25,7 +28,7 @@ var flickrPhotos = $.ajax({
     var imageUrl = 'http://flickr.com/photos/' + imageID + '_' + imageSecret + '.jpg';
     var object = new Object;
     object.description = imageDescription;
-    object.Url = imageUrl;
+    object.url = imageUrl;
     imageObjectsArray.push(object);
   });
 }).fail(function(){
@@ -33,3 +36,5 @@ var flickrPhotos = $.ajax({
 }).complete(function(){
   //console.log("request completed");
 });
+
+//$('.foodImgList').append(picRenderTemplate(imageObjectsArray));

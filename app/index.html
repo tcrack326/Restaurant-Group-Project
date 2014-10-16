@@ -158,7 +158,8 @@
         <div class="foodPics">
           <h4>Food Pics</h4><!-- food pictures on right side -->
           <ul class="foodImgList">
-            <li class="foodImg"></li>
+            <!-- template goes here -->
+            <!-- <li class="foodImg"></li> -->
           </ul >
         </div> <!-- end of food pictures on right side -->
       </div> <!-- end of main content -->
@@ -203,13 +204,20 @@
   </div>
 </script>
 
+<script id="foodPics" type="text/template">
+
+  <!-- <%= _.each(imageObjectsArray, function(p) { %>
+          <li>
+          <%= p.url %>
+          </li>
+  <% }); %> -->
+</script>
 
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="scripts/jquery.xml2json.js"</script>
     <!-- endbower -->
     <!-- endbuild -->
 
