@@ -112,6 +112,8 @@
 
                 <div class="content itemsMenu">
                   <h2 class="appsMenu">Appetizers</h2>
+                  <h2 class="entreeMenu">Entrees</h2>
+                  <h2 class="sidesMenu">Sides A La Carte</h2>
                 </div>
           </div> <!-- end menu -->
 
@@ -185,7 +187,12 @@
 </script>
 
 <script id="menuSides" type="text/template">
-
+  <h3><%= item %></h3>
+  <span><%= price %></span>
+  <div class="menuDesc">
+    <p><%= description %></p>
+    <div class="foodStats"></div>
+  </div>
 </script>
 
 
