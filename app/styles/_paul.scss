@@ -99,6 +99,7 @@ h2 {
 h3 {
   font-size: 3.5em;
   padding-left: 3%;
+  padding-top: 10px;
   display: block;
   clear: both;
   span {
@@ -106,7 +107,7 @@ h3 {
     font-size: .6em;
   }
 }
-.appsMenu {
+.appsMenu, .entreeMenu, .sidesMenu {
   clear: both;
 }
 .menuDesc {
