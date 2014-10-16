@@ -1,10 +1,11 @@
 .foodPics {
-  height: 40em;
+  height: 80em;
   color: $charcoal;
 }
 
 .foodImgList {
-  height: 40em;
+  height: 80em;
+  border-radius: 2%;
   margin: 0;
   overflow: auto;
   border:1px solid $charcoal;
