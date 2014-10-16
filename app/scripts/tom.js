@@ -5,7 +5,6 @@ var imageObjectsArray = []; //needed to store the pics from Flickr in the ajax c
 request photos from Flickr
 =============================================================================================*/
 
-
 //method(s) for requests
 var getMyFavs = "flickr.favorites.getList";
 
