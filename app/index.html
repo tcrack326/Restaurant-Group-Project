@@ -71,12 +71,12 @@
         <div class="rightBarBox" id="location">
           <h4>Location</h4>
           <div id="googleMaps">
-            <!--<iframe>
-            width="450"
-            height="250"
-            frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/search?key=API_KEY&q=record+stores+in+Seattle">
-          </iframe>-->
+            <iframe
+  width="100%"
+  height="100%"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDtjtJRSiCy0VLNldBNnWhTzUqasbz0tc4&q=Atlanta+Tech+Village+Atlanta+GA">
+</iframe>
 
           </div>
           <span class="address">123 Main Street,New York NY 12345</span>
@@ -213,20 +213,50 @@
 </script>
 
 <script id="menuEntrees" type="text/template">
-  <h3><%= item %></h3>
-  <span><%= price %></span>
+  <h3><%= item %>
+    <span><%= price %></span>
+  </h3>
+
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats"></div>
+  </div>
+  <div class="foodStats">
+        <% if (allergies) { %>
+        <span>A</span>
+        <% } %>
+        <% if (favorite) { %>
+        <span>F</span>
+        <% } %>
+        <% if (spicy) { %>
+        <span>S</span>
+        <% } %>
+        <% if (vegan) { %>
+        <span>V</span>
+        <% } %>
   </div>
 </script>
 
 <script id="menuSides" type="text/template">
-  <h3><%= item %></h3>
-  <span><%= price %></span>
+  <h3><%= item %>
+    <span><%= price %></span>
+  </h3>
+
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats"></div>
+  </div>
+  <div class="foodStats">
+        <% if (allergies) { %>
+        <span>A</span>
+        <% } %>
+        <% if (favorite) { %>
+        <span>F</span>
+        <% } %>
+        <% if (spicy) { %>
+        <span>S</span>
+        <% } %>
+        <% if (vegan) { %>
+        <span>V</span>
+        <% } %>
   </div>
 </script>
 
