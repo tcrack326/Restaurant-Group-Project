@@ -5,7 +5,7 @@ $red: HSLA(0, 100%, 34%, 1);
 
 .leftStoryboard {
   position: relative;
-  min-height: 250px;
+  min-height: 300px;
   clear: both;
   width: 80%;
   margin: 25px 0;
@@ -16,14 +16,14 @@ $red: HSLA(0, 100%, 34%, 1);
 .ourStory, .menu, .reservations {
   float: left;
 }
+
 .ourStory label, .menu label, .reservations label {
   padding: 7px;
-  border: 1px solid $border;
+  border: 1.5px solid $border;
   margin-left: -1px;
   position: relative;
   left: 1px;
   font-family: 'Merriweather', serif;
-  font-weight: bold;
   color: $red;
   font-size: 2.5em;
 }
@@ -56,6 +56,18 @@ $red: HSLA(0, 100%, 34%, 1);
   font-size: .5em;
 }
 
+.about {
+  //position: absolute;
+  top: 28px;
+  left: 0;
+  background: HSLA(0, 0%, 98%, 1);
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  color: $charcoal;
+  font-size: 2.5em;
+}
+
 [type=radio]:checked ~ label {
   background: HSLA(0, 0%, 98%, 1);
   border-bottom: none;
@@ -73,7 +85,7 @@ input, textarea {
     outline: 0;
     font: normal 13px/100% 'Merriweather', serif;
     width: 200px;
-    background: #FFFFFF url('bg_form.png') left top repeat-x;
+    background: #FFFFFF url('bg_form.png') left top     repeat-x;
     background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
     background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
     box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
@@ -82,31 +94,45 @@ input, textarea {
     }
 
 textarea {
-    width: 400px;
+    width: 250px;
     max-width: 400px;
-    height: 150px;
+    height: 100px;
     line-height: 150%;
     }
 
 input:hover, textarea:hover,
 input:focus, textarea:focus {
-    border-color: #C9C9C9;
+    border-color: $red;//#C9C9C9; original color hover
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
     }
 
 .form label {
     margin-left: 10px;
-    color: #999999;
+    color: $charcoal;
+    border: none;
+    float:left;
     }
 
 .submit input {
     width: auto;
     padding: 9px 15px;
-    background: #617798;
+    background: $red;
     border: 0;
     font-size: 14px;
     color: #FFFFFF;
     margin-top:15px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    //-moz-border-radius: 5px;
+    //-webkit-border-radius: 5px;
     }
+
+.reservation {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: HSLA(0, 0%, 98%, 1);
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: $charcoal;
+  font-size: .5em;
+}
