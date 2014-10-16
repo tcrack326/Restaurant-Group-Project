@@ -10,15 +10,16 @@ $border: HSLA(0, 0%, 70%, 1);
   overflow: auto;
   border-bottom: 1px solid $border;
   margin-bottom: 10px;
-  
+
 }
+.logo{
 h1 {
   color: $red;
   float: left;
   margin-left:25px;
   margin-top:80px;
+  }
 }
-
 /* Social Media */
 .socialMedia {
   float: right;
