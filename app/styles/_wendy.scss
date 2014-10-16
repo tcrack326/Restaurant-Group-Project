@@ -7,10 +7,11 @@ $red: HSLA(0, 100%, 34%, 1);
   position: relative;
   min-height: 800px;
   clear: both;
-  width: 80%;
+  width: 70%;
   margin: 25px 0;
   /* margin-left: 50px; */
   float: left;
+  max-height: 1200px;
 }
 .ourStory, .menu, .reservations {
   float: left;
@@ -35,13 +36,13 @@ $red: HSLA(0, 100%, 34%, 1);
 .menu [type=radio] {
   display: none;
 }
-
 .reservations [type=radio] {
   display: none;
 }
 .mainContent{
   display:block;
   overflow:auto;
+  width: 100%
 }//fixed this to push the footer down
 .content {
   position: absolute;
@@ -54,7 +55,16 @@ $red: HSLA(0, 100%, 34%, 1);
   color: $charcoal;
   font-size: .5em;
 }
-
+.foodPics {
+  width: 30%;
+  img {
+    width: 50%;
+  }
+  li {
+    width: 100%;
+    display: block;
+  }
+}
 .about {
   //position: absolute;
   top: 28px;
@@ -134,4 +144,8 @@ input:focus, textarea:focus {
   padding: 20px;
   color: $charcoal;
   font-size: .5em;
+}
+
+.mydropdown {
+  size: 25px;
 }
