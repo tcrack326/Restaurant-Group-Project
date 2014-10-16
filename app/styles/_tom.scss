@@ -1,0 +1,15 @@
+.foodPics {
+  height: 40em;
+  color: $charcoal;
+}
+
+.foodImgList {
+  height: 40em;
+  margin: 0;
+  overflow: auto;
+  border:1px solid $charcoal;
+}
+
+.foodImgList li img {
+  width: 100%;
+}
