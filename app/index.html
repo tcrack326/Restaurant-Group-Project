@@ -105,7 +105,6 @@
                 </div>
 
           </div> <!-- story end -->
-<!-- +++++++++++++++++++++++++++++++++++++++++ -->
 
           <div class="menu"> <!-- start menu -->
             <input type="radio" id="tab-2" name="tab-group-1">
@@ -118,7 +117,6 @@
                 </div>
           </div> <!-- end menu -->
 
-<!-- +++++++++++++++++++++++++++++++++++++++++ -->
           <div class="reservations"> <!-- start reservations -->
             <input type="radio" id="tab-3" name="tab-group-1">
               <label for="tab-3">Reservations</label>
@@ -144,6 +142,13 @@
                     <label for="time>">Time</label>
                     <input type="time" name="time" id="time" />
                   </p>
+
+                  <p class="preference">
+                    <label for="preference">Seating Preference</label>
+                    <input type="menu" name="preference" id="preference" />
+                  
+
+
 
                   <p class="text">
                     <label for="notes">Special Notes</label>
@@ -180,20 +185,7 @@
   <span><%= price %></span>
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats">
-        <% if (allergies) { %>
-        <span>A</span>
-        <% } %>
-        <% if (favorite) { %>
-        <span>F</span>
-        <% } %>
-        <% if (spicy) { %>
-        <span>S</span>
-        <% } %>
-        <% if (vegan) { %>
-        <span>V</span>
-        <% } %>
-    </div>
+    <div class="foodStats"></div>
   </div>
 </script>
 
@@ -202,20 +194,7 @@
   <span><%= price %></span>
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats">
-        <% if (allergies) { %>
-        <span>A</span>
-        <% } %>
-        <% if (favorite) { %>
-        <span>F</span>
-        <% } %>
-        <% if (spicy) { %>
-        <span>S</span>
-        <% } %>
-        <% if (vegan) { %>
-        <span>V</span>
-        <% } %>
-    </div>
+    <div class="foodStats"></div>
   </div>
 </script>
 
@@ -224,20 +203,7 @@
   <span><%= price %></span>
   <div class="menuDesc">
     <p><%= description %></p>
-    <div class="foodStats">
-        <% if (allergies) { %>
-        <span>A</span>
-        <% } %>
-        <% if (favorite) { %>
-        <span>F</span>
-        <% } %>
-        <% if (spicy) { %>
-        <span>S</span>
-        <% } %>
-        <% if (vegan) { %>
-        <span>V</span>
-        <% } %>
-    </div>
+    <div class="foodStats"></div>
   </div>
 </script>
 
