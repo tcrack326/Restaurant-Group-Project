@@ -129,11 +129,11 @@
                  <form class="form">
 
                   <p class="name">
-                    <label for="name">Name</label>
+                     <label for="name">Name</label>
                       <input type="text" name="name" id="name" />
                   </p>
 
-                  <p class="email">
+                  <p class="guests">
                     <label for="guests">Number of Guests</label>
                       <input type="text" name="guests" id="guests" />
                   </p>
@@ -150,12 +150,15 @@
 
                   <p class="preference">
                     <label for="preference">Seating Preference</label>
-                    <input type="dropdown" name="preference" id="preference" />
-
-
-
-
-
+                      <input list="seatPreference" autocomplete="off" />
+                        <datalist id="seatPreference">
+                          <option value="Main Dining Room">
+                          <option value="On Your Ass">
+                          <option value="Roof Top Deck">
+                          <option value="Outside Patio">
+                            <option value="In the Ocean">
+                          <option value="Bar">
+                        </datalist>
 
                   <p class="text">
                     <label for="notes">Special Notes</label>
