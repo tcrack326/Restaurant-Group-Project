@@ -1,5 +1,6 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
+@import 'modules/modal';
 $border: HSLA(0, 0%, 70%, 1);
 $newsBoxes: HSLA(0, 0%, 92%, 1);
 .heroUnit{
