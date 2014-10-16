@@ -30,19 +30,26 @@ img {
   border-color:$border;
   clear:both;
   height:100px;
+  background-color:$red;
+
   span{
     display: block;
     float: left;
     margin-top: 46px;
-    /* margin-bottom: auto; */
     margin-left: 15px;
     font-family: 'Tangerine', cursive, serif;
-    font-size: 30px;
-
-
+    font-size: 50px;
+  }
+  .date{
+    font-size: 27px;
+    margin-top: 63px;
   }
   p{
-    float:right;
+    float: right;
+    font-family: 'Tangerine', cursive, serif;
+    font-size: 26px;
+    margin-top: 62px;
+    margin-right: 10px;
 
   }
 }
