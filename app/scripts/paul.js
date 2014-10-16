@@ -42,22 +42,27 @@ var menuItemId;
 $.getJSON(specialURL).done( function(special) {
   // determines id of special of day from menu
   var menuItemId = special.menu_item_id;
-});
-
-$.getJSON(menuURL).done( function(menu_item) {
-  menu_item.appetizers.forEach( function(apps_data) { // loops through appetizers to look for id
-    if (apps_data.id === menuItemId) { // if found use that appetizers
-      $('.updatingSpecial').append(special_Render(apps_data));
-    };
-  });
-  menu_item.entrees.forEach( function(entree_data) { // loops through entrees to look for id
-    if (entree_data.id === menuItemId) { // if found use that entree
-      $('.updatingSpecial').append(special_Render(entree_data));
-    };
-  });
-  menu_item.sides.forEach( function(sides_data) { // loops through sides to look for id
-    if (sides_data.id === menuItemId) { // if found use that side
-      $('.updatingSpecial').append(special_Render(sides_data));
-    };
+  console.log(menuItemId);
+  $.getJSON(menuURL).done( function(menu_item) {
+    menu_item.appetizers.forEach( function(apps_data) { // loops through appetizers to look for id
+      if (apps_data.id === menuItemId) { // if found use that appetizers
+        $('.updatingSpecial').append(special_Render(apps_data));
+      } else {
+        console.log("not an appetizer");
+      };
+    });
+    menu_item.entrees.forEach( function(entree_data) { // loops through entrees to look for id
+      if (entree_data.id === menuItemId) { // if found use that entree
+        console.log("everything is dead");
+        $('.updatingSpecial').append(special_Render(entree_data));
+      };
+    });
+    menu_item.sides.forEach( function(sides_data) { // loops through sides to look for id
+      if (sides_data.id === menuItemId) { // if found use that side
+        $('.updatingSpecial').append(special_Render(sides_data));
+      } else {
+        console.log("not a side");
+      };
+    });
   });
 });
