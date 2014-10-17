@@ -17,13 +17,64 @@
 }
 
 #flyingPig {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
   width: 90px;
   height: 105px;
   margin: 2% auto;
   background: url('../images/pig-sprite.png') left center;
-  animation: play .8s steps(6) infinite;
+  animation: play .8s steps(6) infinite,
+  rotate 3s infinite alternate,
+  hover 16s infinite alternate;
 }
 
 @keyframes play {
 	100% { background-position: -540px; }
+}
+
+
+@keyframes rotate {
+  from{
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes hover {
+  0% {
+    left: 0%;
+    top: 0%;
+    transform: translateX(15%);
+    transform: translateY(15%);
+  }
+  25%{
+    left: 15%;
+    top: 15%;
+    transform: translateX(35%);
+    transform: translateY(35%);
+  }
+  50% {
+    left: 25%;
+    top: 35%;
+    transform: translateX(10%);
+    transform: translateY(40%);
+  }
+  75%{
+    left: 10%;
+    top: 40%;
+    transform: translateX(50%);
+    transform: translateY(35%);
+  }
+  100% {
+    top: 50%;
+    left: 35%;
+    transform: translateX(0%);
+    transform: translateY(0%);
+
+  }
+
 }
