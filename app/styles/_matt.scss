@@ -48,27 +48,19 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
 #latestNews{
   p{
     display: block;
-    width: 95%;
+    width: 100%;
     height: 60%;
-    margin-top: 16px;
-    margin-bottom: 7px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
-#todaysSpecial{
+#todaysSpecial {
 
-  #specialsImage{
+  #specialsImage {
     border-style: solid;
     display: block;
-    width: 95%;
+    width: 100%;
     height: 60%;
-    margin-top: 16px;
-    margin-bottom: 7px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  span{
+  span {
     margin-left: auto;
     margin-right: auto;
   }
@@ -130,8 +122,6 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     display:block;
     float:right;
     margin-bottom:25px;
-  }
-
-
+    }
   }
 }
