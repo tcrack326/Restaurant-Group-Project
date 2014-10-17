@@ -1,6 +1,11 @@
+// Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
 $charcoal: HSLA(0, 0%, 40%, 1);
 $red: HSLA(0, 100%, 34%, 1);
 $border: HSLA(0, 0%, 70%, 1);
+
 
 
 /* Header */
@@ -12,9 +17,9 @@ $border: HSLA(0, 0%, 70%, 1);
   margin-bottom: 10px;
   background-image: url('https://curtisvoisin.files.wordpress.com/2012/05/dscn0116.jpg');
   background-size:1425px 700px;
-  max-width:1425px;height: 700px;
+  max-width: 1425px;
+  height: 700px;
   position:relative;
-
 
   .topSpot{
     display:block;
@@ -23,12 +28,6 @@ $border: HSLA(0, 0%, 70%, 1);
     opacity:.7;
 
   }
-  /*img{
-    position:relative;
-    height:700px;
-    width:1425px;
-
-}*/
 }
 .logo{
   h1 {
@@ -38,8 +37,9 @@ $border: HSLA(0, 0%, 70%, 1);
     position: absolute;
     font-size: 3em;
     margin: 0.67em 0;
-    margin-left: 25px;
+    margin-left: 1em;
     bottom: 350px;
+    text-shadow: black 5px 8px;
   }
 }
 /* Social Media */
@@ -138,4 +138,9 @@ h3 {
     width: 20px;
     padding-left: 1%;
   }
+}
+
+/* Hide and Show Tab Content */
+.hide {
+  display: none;
 }

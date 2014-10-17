@@ -11,13 +11,13 @@ $red: HSLA(0, 100%, 34%, 1);
   margin: 25px 0;
   /* margin-left: 50px; */
   float: left;
-  max-height: 1200px;
+  max-height: 70em;
 }
-.ourStory, .menu, .reservations {
+.ourStory, .menu, .reservations, .comments {
   float: left;
 }
 
-.ourStory label, .menu label, .reservations label {
+.ourStory label, .menu label, .reservations label, .comments label {
   padding: 7px;
   border: 1.5px solid $border;
   margin-left: -1px;
@@ -33,17 +33,15 @@ $red: HSLA(0, 100%, 34%, 1);
   font-size: 2.0em;
 }
 
-.menu [type=radio] {
-  display: none;
-}
-.reservations [type=radio] {
+.menu [type=radio], .reservations [type=radio], .comments [type=radio] {
   display: none;
 }
 
 .mainContent{
   display:block;
+  position: relative;
   //overflow:auto;
-  width: 100%
+  /* width: 100% */
 }//fixed this to push the footer down
 .content {
   position: absolute;
@@ -90,11 +88,11 @@ $red: HSLA(0, 100%, 34%, 1);
 // Reservations input fields
 
 input, textarea {
-    padding: 9px;
+    padding: 15px;
     border: solid 1px #E5E5E5;
     outline: 0;
     font: normal 13px/100% 'Merriweather', serif;
-    width: 200px;
+    width: 275px;
     background: #FFFFFF url('bg_form.png') left top     repeat-x;
     background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
     background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
@@ -105,9 +103,9 @@ input, textarea {
     }
 
 textarea {
-    width: 250px;
+    width: 350px;
     max-width: 400px;
-    height: 100px;
+    height: 125px;
     line-height: 150%;
     }
 
@@ -139,7 +137,7 @@ input:focus, textarea:focus {
 
 .reservation {
   position: absolute;
-  top: 28px;
+  top: 55px;
   left: 0;
   background: HSLA(0, 0%, 98%, 1);
   right: 0;

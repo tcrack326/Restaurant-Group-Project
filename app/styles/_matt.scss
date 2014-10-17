@@ -1,45 +1,44 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
+
 $border: HSLA(0, 0%, 70%, 1);
 $newsBoxes: HSLA(0, 0%, 92%, 1);
+
 .heroUnit{
-  margin-top:10px;
-  img{
+  margin-top: 10px;
+  img {
     display: block;
     margin: 0 auto;
   /*  border-radius:5px;*/
   }
 }
-.newsBar{
-  display:block;
-  margin:10px auto;
-  height:250px;
+
+
+.newsBar {
+  display: block;
+  margin: 0% auto;
+  height: 250px;
   /*border-style:solid;*/
 
-  div{
-    width:33%;
-    border-style: solid;
-    border-color:$border;
-    border-width:1px;
-    /*border-radius:5px;*/
-    height:100%;
-    float:left;
-    margin-right:2px;
-    margin-left:2px;
-    background-color:$newsBoxes;
+  .leftBarBox, .rightBarBox {
+    width: 33%;
+    border: 1px solid $border;
+    height: 100%;
+    float: left;
+    margin: 0% 0.1%;
+    background-color: $newsBoxes;
     padding:5px;
 
-    h4{
-      text-align:left;
-      padding-left:5px;
-      width:100%;
-      border-bottom-style:solid;
-      border-width:1px;
-      display:inline-block;
-      margin:0;
-      font-size:13px;
+    h4 {
+      text-align: left;
+      padding-left: 5px;
+      width: 100%;
+      border-bottom: 1px solid $border;
+      display: inline-block;
+      margin: 0;
+      font-size: 13px;
       font-family: 'Merriweather', serif;
-      font-weight:bold;
+      font-weight: bold;
 
     }
 
@@ -105,10 +104,8 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     li{
       float:left;
       margin-right:10px;
-
+    }
   }
-  }
-
 }
 .foodPics{
   display:block;
@@ -129,9 +126,7 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
   .foodImg{
     height:200px;
     width:200px;
-    border-style:solid;
-    border-width:1px;
-    border-color:$border;
+    border: 1px solid $border;
     display:block;
     float:right;
     margin-bottom:25px;
