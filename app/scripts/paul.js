@@ -42,12 +42,12 @@ var menuItemId;
 $.getJSON(specialURL).done( function(special) {
   // determines id of special of day from menu
   var menuItemId = special.menu_item_id;
-  console.log(menuItemId);
+  console.log("Today's special is: Menu Item #" + menuItemId)
   $.getJSON(menuURL).done( function(menu_item) {
     menu_item.appetizers.forEach( function(apps_data) { // loops through appetizers to look for id
       if (apps_data.id === menuItemId) { // if found use that appetizers
         $('.updatingSpecial').append(special_Render(apps_data));
-      }; 
+      };
     });
     menu_item.entrees.forEach( function(entree_data) { // loops through entrees to look for id
       if (entree_data.id === menuItemId) { // if found use that entree
@@ -60,4 +60,17 @@ $.getJSON(specialURL).done( function(special) {
       };
     });
   });
+});
+
+// Hide Menu When Not Active Tab
+$('.menu').on('click', function() {
+  $('.itemsMenu').removeClass('hide');
+});
+
+$('.reservations').on('click', function() {
+  $('.itemsMenu').addClass('hide');
+});
+
+$('.ourStory').on('click', function() {
+  $('.itemsMenu').addClass('hide');
 });
