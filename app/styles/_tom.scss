@@ -17,28 +17,13 @@
 }
 
 #flyingPig {
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  content: url("../app/images/icon_50704-white.png");
-  height: 200px;
-  width: 500px;
+  width: 90px;
+  height: 105px;
+  margin: 2% auto;
+  background: url('../images/pig-sprite.png') left center;
+  animation: play .8s steps(6) infinite;
 }
 
-/* #flyingPig:hover {
-  content: url("../app/images/icon_50704-white-4.png");
-  animation-duration: 30s;
-  animation-name: fly;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-} */
-
-
-@keyframes fly {
-  from {
-    content: url("images/icon_50704-white.png");
-  }
-  to {
-    content: url("images/icon_50704-white-4.png");
-  }
+@keyframes play {
+	100% { background-position: -540px; }
 }
