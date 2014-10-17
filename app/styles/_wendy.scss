@@ -11,7 +11,7 @@ $red: HSLA(0, 100%, 34%, 1);
   margin: 25px 0;
   /* margin-left: 50px; */
   float: left;
-  max-height: 1200px;
+  max-height: 70em;
 }
 .ourStory, .menu, .reservations {
   float: left;
@@ -41,8 +41,9 @@ $red: HSLA(0, 100%, 34%, 1);
 }
 .mainContent{
   display:block;
+  position: relative;
   //overflow:auto;
-  width: 100%
+  /* width: 100% */
 }//fixed this to push the footer down
 .content {
   position: absolute;

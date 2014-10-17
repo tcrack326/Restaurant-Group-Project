@@ -1,3 +1,7 @@
+// Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
 $charcoal: HSLA(0, 0%, 40%, 1);
 $red: HSLA(0, 100%, 34%, 1);
 $border: HSLA(0, 0%, 70%, 1);
@@ -139,4 +143,9 @@ h3 {
     width: 20px;
     padding-left: 1%;
   }
+}
+
+/* Hide and Show Tab Content */
+.hide {
+  display: none;
 }
