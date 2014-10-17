@@ -65,10 +65,16 @@ $.getJSON(specialURL).done( function(special) {
 // Hide Menu When Not Active Tab
 $('.menu').on('click', function() {
   $('.itemsMenu').removeClass('hide');
+  $('.reservation').addClass('hide');
+  $('.ourStory div').addClass('hide');
 });
 $('.reservations').on('click', function() {
   $('.itemsMenu').addClass('hide');
+  $('.ourStory div').addClass('hide');
+  $('.reservation').removeClass('hide');
 });
 $('.ourStory').on('click', function() {
   $('.itemsMenu').addClass('hide');
+  $('.reservation').addClass('hide');
+  $('.ourStory div').removeClass('hide');
 });
