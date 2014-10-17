@@ -1,6 +1,6 @@
-var menuURL = "http://restaurantapi.apiary.io/menu",
-    latestURL = "http://restaurantapi.apiary.io/news/latest",
-    specialURL = "http://restaurantapi.apiary.io/menu/special";
+var menuURL = "http://private-2d011-restaurantapi.apiary-mock.com/menu",
+    latestURL = "http://private-2d011-restaurantapi.apiary-mock.com/news/latest",
+    specialURL = "http://private-2d011-restaurantapi.apiary-mock.com/menu/special";
 
 
 // Start of Templating of Appetizers

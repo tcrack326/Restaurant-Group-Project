@@ -13,11 +13,11 @@ $red: HSLA(0, 100%, 34%, 1);
   float: left;
   max-height: 70em;
 }
-.ourStory, .menu, .reservations {
+.ourStory, .menu, .reservations, .comments {
   float: left;
 }
 
-.ourStory label, .menu label, .reservations label {
+.ourStory label, .menu label, .reservations label, .comments label {
   padding: 7px;
   border: 1.5px solid $border;
   margin-left: -1px;
@@ -33,12 +33,10 @@ $red: HSLA(0, 100%, 34%, 1);
   font-size: 2.0em;
 }
 
-.menu [type=radio] {
+.menu [type=radio], .reservations [type=radio], .comments [type=radio] {
   display: none;
 }
-.reservations [type=radio] {
-  display: none;
-}
+
 .mainContent{
   display:block;
   position: relative;
