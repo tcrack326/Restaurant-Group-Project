@@ -40,7 +40,7 @@ var flickrPhotos = $.ajax({
 }).fail(function(){
   console.log("failure to get photos");
 }).complete(function(){
-  console.log("request completed");
+  //console.log("request completed");
 });
 
 });
