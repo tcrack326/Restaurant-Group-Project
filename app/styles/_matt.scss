@@ -18,6 +18,7 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
   display: block;
   margin: 0% auto;
   height: 340px;
+  overflow: auto;
   /*border-style:solid;*/
 
   .leftBarBox, .rightBarBox {
@@ -93,7 +94,27 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     }
   }
 }
-.foodPics{
+
+a.trigger{
+  position: relative;
+  text-decoration: none;
+  font-size: 10em;
+  letter-spacing:-1px;
+  color:#fff;
+  padding: 20px 40px 20px 15px;
+  font-weight: 700;
+  background:#333333 url(images/plus.png) 85% 55% no-repeat;
+  border:1px solid #444444;
+  display: block;
+  height: 100%;
+  margin: 0px;
+  text-align: center;
+}
+
+
+
+
+.foodPics { /* food pictures on the right side */
   display:block;
   float:right;
   /*border-style:solid;*/
