@@ -64,17 +64,26 @@ $.getJSON(specialURL).done( function(special) {
 
 // Hide Menu When Not Active Tab
 $('.menu').on('click', function() {
-  $('.itemsMenu').removeClass('hide');
+  /*$('.commentsContent').addClass('hide');*/
   $('.reservation').addClass('hide');
   $('.ourStory div').addClass('hide');
+  $('.itemsMenu').removeClass('hide');
 });
 $('.reservations').on('click', function() {
+  /*$('.commentsContent').addClass('hide');*/
   $('.itemsMenu').addClass('hide');
   $('.ourStory div').addClass('hide');
   $('.reservation').removeClass('hide');
 });
 $('.ourStory').on('click', function() {
+  /*$('.commentsContent').addClass('hide');*/
   $('.itemsMenu').addClass('hide');
   $('.reservation').addClass('hide');
   $('.ourStory div').removeClass('hide');
 });
+/*$('.comments').on('click', function() {
+  $('.itemsMenu').addClass('hide');
+  $('.reservation').addClass('hide');
+  $('.ourStory div').addClass('hide');
+  $('.commentsContent').removeClass('hide');
+});*/
