@@ -101,7 +101,8 @@ h3 {
   clear: both;
   min-width: 100%;
   overflow-x: hidden;
-  &:after {
+  height:35px;
+  /*&:after {
   float: left;
   width: 0;
   white-space: nowrap;
@@ -112,7 +113,7 @@ h3 {
 ". . . . . . . . . . . . . . . . . . . . "
 ". . . . . . . . . . . . . . . . . . . . "
 ". . . . . . . . . . . . . . . . . . . . "
-  }
+  }*/
   span {
     float: right;
     font-size: .6em;
