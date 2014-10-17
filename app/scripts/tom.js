@@ -43,4 +43,34 @@ var flickrPhotos = $.ajax({
   //console.log("request completed");
 });
 
+//=========================================================================
+//Make the pig fly around the mouse cursor!!!
+//=========================================================================
+var x, y, offsetX, offsetY, newX, newY;
+//set up recursive function to apply some offsets every second to make the pig hover around!!!!!!
+var getRandomPosition = function(){
+offsetX = Math.random(-100, 100);
+offsetY = Math.random(-100, 100);
+setTimeout(getRandomPosition, 1000);
+}
+//start it!
+//getRandomPosition();
+
+$('*').mouseover(function(e) {
+
+x = e.pageX;
+y = e.pageY;
+
+newX = x;
+newY = y;
+
+//$("#flyingPig").css({left:newX,top:newY});
+});
+
+
+
+
+
+
+//============document ready end====================================
 });
