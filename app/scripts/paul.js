@@ -66,11 +66,9 @@ $.getJSON(specialURL).done( function(special) {
 $('.menu').on('click', function() {
   $('.itemsMenu').removeClass('hide');
 });
-
 $('.reservations').on('click', function() {
   $('.itemsMenu').addClass('hide');
 });
-
 $('.ourStory').on('click', function() {
   $('.itemsMenu').addClass('hide');
 });
