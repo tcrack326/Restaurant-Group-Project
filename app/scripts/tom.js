@@ -13,7 +13,7 @@ request photos from Flickr
 var getMyFavs = "flickr.favorites.getList";
 
 //Url for request - api key and token user are for user tmccracken209 - FOR FUTURE USE HIDE OR REMOVE - DO NOT MAKE PUBLIC!!! For json data from flickr: &format=json&nojsoncallback=1
-var flickrUrl = "https://api.flickr.com/services/rest/?method=" + getMyFavs + "&api_key=246c32a97603c8125afcf7a2246f4671&format=json&nojsoncallback=1&auth_token=72157648389940067-82f44bbced6811f8&api_sig=12c0e68f8b7d4c31b62a89b7a4915b0a";
+var flickrUrl = "https://api.flickr.com/services/rest/?method=" + getMyFavs + "&api_key=46dcb38976ef086acdb22225643afd13&format=json&nojsoncallback=1&auth_token=72157648809402812-fe637688a179ddcf&api_sig=010f1f46e4ce86025d7ea0c83451844d";
 
 //make the AJAX call with jQuery
 var flickrPhotos = $.ajax({
