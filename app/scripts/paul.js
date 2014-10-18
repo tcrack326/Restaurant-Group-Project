@@ -72,3 +72,8 @@ $('.reservations').on('click', function() {
 $('.ourStory').on('click', function() {
   $('.itemsMenu').addClass('hide');
 });
+
+// Hide overlay on click
+$('.trigger').on('click', function() {
+  $(this).toggleClass('hide');
+});
