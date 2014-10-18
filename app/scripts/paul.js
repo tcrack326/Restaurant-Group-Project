@@ -88,3 +88,10 @@ $('.ourStory').on('click', function() {
   $('.ourStory div').addClass('hide');
   $('.commentsContent').removeClass('hide');
 });*/
+
+/*  Newsbar Remove Overlay on Click  */
+$('.trigger').mouseover( function () {
+  $(this).css('opacity', '0');
+}).mouseleave( function() {
+  $(this).css('opacity', '.9');
+});
