@@ -44,7 +44,7 @@ var flickrPhotos = $.ajax({
 });
 
 //=========================================================================
-//Make the pig fly around the mouse cursor!!!
+//Make the pig fly around the mouse cursor!!! currently not working :(
 //=========================================================================
 var x, y, offsetX, offsetY, newX, newY;
 //set up recursive function to apply some offsets every second to make the pig hover around!!!!!!
@@ -56,16 +56,16 @@ setTimeout(getRandomPosition, 1000);
 //start it!
 //getRandomPosition();
 
-$('*').mouseover(function(e) {
-
-x = e.pageX;
-y = e.pageY;
-
-newX = x;
-newY = y;
+// $(document).mouseover(function(e) {
+//
+// x = e.pageX;
+// y = e.pageY;
+//
+// newX = x;
+// newY = y;
 
 //$("#flyingPig").css({left:newX,top:newY});
-});
+//});
 
 
 
