@@ -30,7 +30,7 @@
       <div class=topSpot>
       </div>
       <div class="logo">
-        <h1>le Cochon de Fer</h1>
+        <div id="flyingPig"></div><h1>le Cochon de Fer</h1>
       </div>
       <div class="socialMedia">
         <ul>
@@ -111,7 +111,7 @@
           <div class="reservations"> <!-- start reservations -->
             <input type="radio" id="tab-3" name="tab-group-1">
               <label for="tab-3">Reservations</label>
-               <div class="reservation">
+               <div class="reservation hide">
                  <form class="form">
 
                   <p class="name">
@@ -203,7 +203,9 @@
 </script>
 
 <script id="menuEntrees" type="text/template">
-  <h3><span class="items"><%= item %></span>
+  <h3>
+  <span class="items"><%= item %></span>
+  
     <span class="prices"><%= price %></span>
   </h3>
 
