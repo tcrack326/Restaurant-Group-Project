@@ -18,7 +18,7 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
   display: block;
   margin: 0% auto;
   height: 340px;
-  overflow: auto;
+  overflow: hidden;
   /*border-style:solid;*/
 
   .leftBarBox, .rightBarBox {
