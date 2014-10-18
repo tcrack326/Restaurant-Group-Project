@@ -23,11 +23,9 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
 
   .leftBarBox, .rightBarBox {
     width: 33%;
-    border: 1px solid $border;
     height: 340px;
     float: left;
     margin: 0% 0.1%;
-    background-color: $newsBoxes;
     padding: 0px;
 
     h4 {
@@ -36,10 +34,13 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
       width: 100%;
       border-bottom: 1px solid $border;
       display: inline-block;
+      padding-bottom: .5em;
       margin: 0;
-      font-size: 13px;
-      font-family: 'Merriweather', serif;
+      font-size: 3em;
+      font-family: 'Tangerine', cursive, serif;
       font-weight: bold;
+      color: HSLA(0, 0%, 40%, 1);
+      text-align: center;
 
     }
 
