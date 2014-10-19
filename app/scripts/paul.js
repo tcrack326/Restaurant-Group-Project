@@ -86,7 +86,7 @@ $('.comments').on('click', function() {
   $('.itemsMenu').addClass('hide');
   $('.reservation').addClass('hide');
   $('.ourStory div').addClass('hide');
-  $('.coments div').removeClass('hide');
+  $('#disqus_thread').removeClass('hide');
 });
 
 /*  Newsbar Remove Overlay on Click  */

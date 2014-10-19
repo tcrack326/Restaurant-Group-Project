@@ -151,6 +151,9 @@ h3 {
   img {
     width: 3em;
     padding-left: 1%;
+    &:hover {
+      width: 3.5em;
+    }
   }
 }
 

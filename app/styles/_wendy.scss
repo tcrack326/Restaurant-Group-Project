@@ -18,9 +18,7 @@ $red: HSLA(0, 100%, 34%, 1);
   position: relative;
   transition: width .6s;
   //box-shadow: 3px 3px 3px $charcoal;
-  &:hover {
-    width: 3.5em;
-  }
+  
 }
 .ourStory, .menu, .reservations, .comments {
   float: left;
