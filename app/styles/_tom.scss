@@ -39,6 +39,18 @@
   hover2 16s infinite alternate;
 }
 
+#flyingPig3 {
+  position: relative;
+  z-index: 100;
+  width: 90px;
+  height: 105px;
+  margin: 4% auto;
+  background: url('../images/pig-left-sprite.png') left center;
+  animation: play .8s steps(6) infinite,
+  rotate3 3s infinite alternate,
+  hover3 16s infinite alternate;
+}
+
 @keyframes play {
 	100% { background-position: -540px; }
 }
