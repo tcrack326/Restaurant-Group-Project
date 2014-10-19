@@ -149,3 +149,12 @@ a.trigger{
     }
   }
 }
+.commentsCont{
+  overflow:auto;
+  margin-left:-39em;
+  .commentForm{
+    float:left;
+    margin-top:30px;
+
+  }
+}
