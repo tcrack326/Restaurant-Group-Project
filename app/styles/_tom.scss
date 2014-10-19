@@ -35,7 +35,7 @@
   margin: 2% auto;
   background: url('../images/pig-left-sprite.png') left center;
   animation: play .8s steps(6) infinite,
-  rotate 3s infinite alternate,
+  rotate2 3s infinite alternate,
   hover2 16s infinite alternate;
 }
 
@@ -92,11 +92,11 @@
   0% {
     left: 70%;
     top: 10%;
-    transform: translateX(55%);
+    transform: translateX(65%);
     transform: translateY(35%);
   }
   25% {
-    left: 55%;
+    left: 65%;
     top: 35%;
     transform: translateX(65%);
     transform: translateY(35%);
@@ -104,21 +104,30 @@
   50% {
     left: 65%;
     top: 35%;
-    transform: translateX(50%);
+    transform: translateX(60%);
     transform: translateY(10%);
   }
   75%{
-    left: 50%;
+    left: 60%;
     top: 10%;
-    transform: translateX(60%);
-    transform: translateY(50%);
+    transform: translateX(70%);
+    transform: translateY(40%);
   }
   100% {
-    left: 60%;
+    left: 70%;
     top: 50%;
     transform: translateX(70%);
     transform: translateY(10%);
 
   }
 
+}
+
+@keyframes rotate2 {
+  from{
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
 }
