@@ -5,7 +5,7 @@ $red: HSLA(0, 100%, 34%, 1);
 
 .leftStoryboard {
   position: relative;
-  height: 1200px;
+  height: 128em;
   clear: both;
   width: 70%;
   margin: 25px 0;
@@ -16,6 +16,7 @@ $red: HSLA(0, 100%, 34%, 1);
   -webkit-filter: grayscale(100%);
   position: relative;
   transition: width .6s;
+  width: 75%;
   //box-shadow: 3px 3px 3px $charcoal;
 
 }
