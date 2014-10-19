@@ -41,11 +41,8 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
       font-weight: bold;
       color: HSLA(0, 0%, 40%, 1);
       text-align: center;
-
     }
-
   }
-
 }
 #latestNews{
   p {
@@ -89,12 +86,11 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 76px;
+    padding-left: 11em;
     display: block;
     list-style: none;
-    height: 15px;
     clear: both;
-    li{
+    li {
       float:left;
       margin-right:10px;
     }
@@ -110,7 +106,7 @@ a.trigger{
   letter-spacing:-1px;
   color:#fff;
   font-weight: 700;
-  background:#333333 url(images/plus.png) 85% 55% no-repeat;
+  background: #333333;
   border: 1px solid #444444;
   display: block;
   height: 100%;
@@ -121,14 +117,9 @@ a.trigger{
   transition: opacity .8s;
 }
 
-
-
-
 .foodPics { /* food pictures on the right side */
   display:block;
   float:right;
-  /*border-style:solid;*/
-  /* border-width:1px; */
   width:20%;
   text-align:center;
 
@@ -150,12 +141,12 @@ a.trigger{
     }
   }
 }
-.commentsCont{
-  overflow:auto;
-  margin-left:-30em;
-  .commentForm{
-    float:left;
-    margin-top:30px;
+.commentsCont {
+  overflow: auto;
+  margin-left: -30em;
+  .commentForm {
+    float: left;
+    margin-top: 30px;
 
   }
 }
