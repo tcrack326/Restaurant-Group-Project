@@ -12,6 +12,16 @@ $red: HSLA(0, 100%, 34%, 1);
   float: left;
   overflow: auto;
 }
+.content img{
+  -webkit-filter: grayscale(100%);
+  width: 60%;
+  position: relative;
+  transition: width .6s;
+  box-shadow: 3px 3px 3px $charcoal;
+  &:hover {
+    width: 70%;
+  }
+}
 .ourStory, .menu, .reservations, .comments {
   float: left;
 }

@@ -21,13 +21,13 @@ $border: HSLA(0, 0%, 70%, 1);
   height: 700px;
   position:relative;
 
-  .topSpot{
+/* .topSpot{
     display:block;
     height:700px;
     background-color:$red;
     opacity:.7;
 
-  }
+  }*/
 }
 .logo{
   h1 {
@@ -73,6 +73,7 @@ $border: HSLA(0, 0%, 70%, 1);
     img {
       width: 25px;
       height: 25px;
+      border-radius: 2em;
     }
   }
 }
@@ -87,21 +88,23 @@ $border: HSLA(0, 0%, 70%, 1);
 
 /* Menu STYLEZ */
 h2 {
-  font-size: 4em;
+  font-size: 6.5em;
   border-bottom: 1px solid $border;
   font-weight: bold;
   padding-bottom: 10px;
   clear: both;
+  font-family: 'Tangerine', cursive, serif;
 }
 h3 {
-  font-size: 3.5em;
+  font-size: 4.5em;
   padding-left: 0%;
   padding-top: 10px;
   display: block;
   clear: both;
   min-width: 100%;
   overflow-x: hidden;
-  height:35px;
+  height: 35px;
+  margin-bottom: 2px;
   /*&:after {
   float: left;
   max-width: 100%;

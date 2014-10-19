@@ -34,10 +34,10 @@
       </div>
       <div class="socialMedia">
         <ul>
-          <span>Follow us:</span>
+          <span>follow us:</span>
           <li><a href="#"><img src='https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx.png'></a></li>
           <li><a href="#"><img src='http://www.ihd-wallpapers.com/wp-content/uploads/2014/09/Facebook_logo-2.jpg'></a></li>
-          <li><a href="#"><img src='http://www.gwdhumanesociety.org/wp-content/uploads/2014/01/Instagram-Logo-1.jpg'></a></li>
+          <li><a href="#"><img src='http://rediscoveringyesterday.files.wordpress.com/2013/10/instagram.png'></a></li>
         </ul>
       </div>
 
@@ -51,12 +51,14 @@
         <div class="leftBarBox updatingNews" id="latestNews">
 
 
-        <a class="trigger" href="#">Latest News</a>
+        <a class="trigger" href="#">latest news</a>
         </div> <!-- latest news -->
 
         <div class="leftBarBox updatingSpecial" id="todaysSpecial">
+          <a class="trigger" href="#">today's special</a>
         </div><!-- today's special -->
         <div class="rightBarBox" id="location">
+          <a class="trigger" href="#">location</a>
           <h4>Location</h4>
           <div id="googleMaps">
             <iframe
@@ -73,7 +75,6 @@
             <li>Map</li>
             <li>Directions</li>
           </ul><!--contactInfo-->
-
         </div> <!-- end location -->
       </div> <!-- end of middle news boxes -->
 
@@ -85,12 +86,18 @@
               <label for="tab-1">Our Story</label>
 
                 <div class="content">
-                  <p class="about">Founded by Monsieur Park and le Chef Griffeth, Le Cochon de Fer was opened in 2010.
+                  <p class="about">Founded by madam Wendy, monsieurs Paul and Tom, and le Chef Griffeth, Le Cochon de Fer was opened in 2010.
                   </p>
-                  <p class="about">The idea came about when Monsieru Paul, from Big Major Cay island, was becoming over-populated with his sounder of swine that he decided the best way to control his pig population was to make his overabundance available to the people of the mainland. With the help of his good friend and now business partner chef Griffeth, they created a seasonally exquisite menu filled with fresh, locally sourced ingredients, spices and of course, pork. The result is food that is honest, straightforward and pays homage to the bounty of Major Cay Island.
+                  <p class="about">
+
+                    The idea came about when Monsieru Paul, from Big Major Cay island, was becoming over-populated with his sounder of swine that he decided the best way to control his pig population was to make his overabundance available to the people of the mainland. With the help of his good friends and now business partners Wendy, Tom, and chef Griffeth, they created a seasonally exquisite menu filled with fresh, locally sourced ingredients, spices and of course, pork. The result is food that is honest, straightforward and pays homage to the bounty of Major Cay Island.
                   </p>
-                  <p class="about">The restaurant became a huge hit from the beginning, with eager mainlanders sometimes waiting hours for an opportunity to experience Le cochon de fer with its warm hues, soft lighting and relaxed ambience that invited guests to settle in, get comfortable, and have a great time.
+                  <img src="http://media.apnarm.net.au/img/media/images/2012/11/29/BRW_29-11-2012_NEWS_06_feral%20pigs_t460.jpg" alt="wild island pigs" />
+                  <p class="about">The restaurant was a huge hit from the beginning, with eager mainlanders sometimes waiting hours for an opportunity to experience Le cochon de fer with its warm hues, soft lighting and relaxed ambience that invited guests to settle in, get comfortable, and have a great time.
+
                   </p>
+                  <img src="http://french-restaurants.regionaldirectory.us/french-restaurant-720.jpg" />
+
                   <p class="about">
       The le Cochon de Fer experience is about more than just food. We set out to offer our guests an experience they will not forget.
                   </p>
@@ -159,6 +166,26 @@
 
              </div><!-- end of content3 -->
           </div> <!-- end of reservations -->
+          <div class="comments">
+            <input type="radio" id="tab-4" name="tab-group-1">
+              <label for="tab-4">Comments</label>
+              <div class="commentsCont hide">
+                <form method='post'>
+
+                  NAME: <input type='text' name='name' id='name' /><br />
+
+                  Email: <input type='text' name='email' id='email' /><br />
+
+                  Comment:<br />
+                  <textarea name='comment' id='comment' /></textarea><br />
+
+                  <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+                  <input type='submit' value='Submit' />
+                </form>
+              </div>
+
+          </div>
 
         </div> <!-- end of main left storyboard -->
         <div class="foodPics">
@@ -205,7 +232,7 @@
 <script id="menuEntrees" type="text/template">
   <h3>
   <span class="items"><%= item %></span>
-  
+
     <span class="prices"><%= price %></span>
   </h3>
 
@@ -247,7 +274,7 @@
 
 <script id="specialTemplate" type="text/template">
   <h4><%= item %></h4>
-  <img id="specialsImage" src=""/>
+  <img id="specialsImage" src="http://www.photographersgallery.com/i/full/sur_la_table_paris.jpg"/>
   <span><% price %></span>
   <p><%= description %></p>
 
