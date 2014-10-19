@@ -64,19 +64,19 @@ $.getJSON(specialURL).done( function(special) {
 
 // Hide Menu When Not Active Tab
 $('.menu').on('click', function() {
-  /*$('.commentsCont').addClass('hide');*/
+  $('#disqus_thread').addClass('hide');
   $('.reservation').addClass('hide');
   $('.ourStory div').addClass('hide');
   $('.itemsMenu').removeClass('hide');
 });
 $('.reservations').on('click', function() {
-  $('.commentsCont').addClass('hide');
+  $('#disqus_thread').addClass('hide');
   $('.itemsMenu').addClass('hide');
   $('.ourStory div').addClass('hide');
   $('.reservation').removeClass('hide');
 });
 $('.ourStory').on('click', function() {
-  $('.commentsCont').addClass('hide');
+  $('#disqus_thread').addClass('hide');
   $('.itemsMenu').addClass('hide');
   $('.reservation').addClass('hide');
   $('.ourStory div').removeClass('hide');
@@ -86,7 +86,7 @@ $('.comments').on('click', function() {
   $('.itemsMenu').addClass('hide');
   $('.reservation').addClass('hide');
   $('.ourStory div').addClass('hide');
-  $('.commentsCont').removeClass('hide');
+  $('#disqus_thread').removeClass('hide');
 });
 
 /*  Newsbar Remove Overlay on Click  */

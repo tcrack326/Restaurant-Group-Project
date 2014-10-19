@@ -21,13 +21,13 @@ $border: HSLA(0, 0%, 70%, 1);
   height: 700px;
   position:relative;
 
-/* .topSpot{
+ .topSpot{
     display:block;
     height:700px;
     background-color:$red;
     opacity:.7;
 
-  }*/
+  }
 }
 .logo{
   h1 {
@@ -94,6 +94,7 @@ h2 {
   padding-bottom: 10px;
   clear: both;
   font-family: 'Tangerine', cursive, serif;
+  margin-top:0px;
 }
 h3 {
   font-size: 4.5em;
@@ -105,6 +106,8 @@ h3 {
   overflow-x: hidden;
   height: 35px;
   margin-bottom: 2px;
+  border-bottom-style: solid;
+  border-width: 1px;
   /*&:after {
   float: left;
   max-width: 100%;
@@ -145,10 +148,14 @@ h3 {
 .foodStats {
   max-width: 35%;
   display: inline-block;
-  padding: 0% 2%;
+  //padding: 0% 2%;
+  padding-left:.5em;
   img {
-    width: 20px;
+    width: 3em;
     padding-left: 1%;
+    &:hover {
+      width: 3.5em;
+    }
   }
 }
 

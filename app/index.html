@@ -58,26 +58,21 @@
           <a class="trigger" href="#">today's special</a>
         </div><!-- today's special -->
         <div class="rightBarBox" id="location">
-          <a class="trigger" href="#">location</a>
+          <a class="trigger" href="https://www.google.com/maps/place/Fowl+Cay,+The+Bahamas/@24.193581,-76.462526,704m/data=!3m1!1e3!4m2!3m1!1s0x892e29f95f9c76d3:0x5adc764a19c07238">location</a>
           <h4>Location</h4>
           <div id="googleMaps">
-            <iframe
-  width="100%"
-  height="100%"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDtjtJRSiCy0VLNldBNnWhTzUqasbz0tc4&q=Atlanta+Tech+Village+Atlanta+GA">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d2361.151651395274!2d-76.46274462692234!3d24.193917554314314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m3!3m2!1d24.1941798!2d-76.4627987!4m0!5e1!3m2!1sen!2sus!4v1413737094319" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
           </div>
-          <span class="address">123 Main Street,New York NY 12345</span>
+          <span class="address">le Cochon de Fer at Royal Plantation, Bahamas</span>
           <ul class="contactInfo">
-            <li>555-555-1234</li>
-            <li>555-555-1234</li>
-            <li>Map</li>
-            <li>Directions</li>
+            <li>877.845.5572</li>
+            <li>On Fowl Cay Island</li>
+            <li><a href="https://www.google.com/maps/place/Fowl+Cay,+The+Bahamas/@24.193581,-76.462526,704m/data=!3m1!1e3!4m2!3m1!1s0x892e29f95f9c76d3:0x5adc764a19c07238"></a>Map</li>
+            <li>2 minute walk from the Fowl Cay Resort</li>
           </ul><!--contactInfo-->
         </div> <!-- end location -->
       </div> <!-- end of middle news boxes -->
-
+      <hr />
       <div class="mainContent"> <!-- main body -->
         <div class="leftStoryboard"> <!-- main left storyboard with tabs -->
           <div class="ourStory"> <!-- story start -->
@@ -89,17 +84,14 @@
                   <p class="about">Founded by madam Wendy, monsieurs Paul and Tom, and le Chef Griffeth, Le Cochon de Fer was opened in 2010.
                   </p>
                   <p class="about">
-
                     The idea came about when Monsieru Paul, from Big Major Cay island, was becoming over-populated with his sounder of swine that he decided the best way to control his pig population was to make his overabundance available to the people of the mainland. With the help of his good friends and now business partners Wendy, Tom, and chef Griffeth, they created a seasonally exquisite menu filled with fresh, locally sourced ingredients, spices and of course, pork. The result is food that is honest, straightforward and pays homage to the bounty of Major Cay Island.
                   </p>
-                  <img src="http://media.apnarm.net.au/img/media/images/2012/11/29/BRW_29-11-2012_NEWS_06_feral%20pigs_t460.jpg" alt="wild island pigs" />
-                  <p class="about">The restaurant was a huge hit from the beginning, with eager mainlanders sometimes waiting hours for an opportunity to experience Le cochon de fer with its warm hues, soft lighting and relaxed ambience that invited guests to settle in, get comfortable, and have a great time.
-
+                  <img class="storyImages" src="http://media.apnarm.net.au/img/media/images/2012/11/29/BRW_29-11-2012_NEWS_06_feral%20pigs_t460.jpg" alt="wild island pigs" />
+                  <p class="about">The restaurant was a huge hit from the beginning, with eager mainlanders sometimes waiting hours for an opportunity to experience le Cochon de Fer with its warm hues, soft lighting and relaxed ambience that invited guests to settle in, get comfortable, and have a great time.
                   </p>
-                  <img src="http://french-restaurants.regionaldirectory.us/french-restaurant-720.jpg" />
-
+                  <img class="storyImages" src="http://french-restaurants.regionaldirectory.us/french-restaurant-720.jpg" />
                   <p class="about">
-      The le Cochon de Fer experience is about more than just food. We set out to offer our guests an experience they will not forget.
+      The le Cochon de Fer experience is about more than just food. We set out to offer our guests a getaway experience they cannot find anywhere else.
                   </p>
                 </div>
 
@@ -169,9 +161,13 @@
           <div class="comments">
             <input type="radio" id="tab-4" name="tab-group-1">
               <label for="tab-4">Comments</label>
+
+
+
               <div id="disqus_thread"></div>
             <!--   <div class="commentsCont hide">
               <form method='post'>
+>>>>>>> c0a0e2a73ba50fcd9251e8752188a31baf4476e5
 
                 NAME: <input type='text' name='name' id='name' /><br />
 
@@ -201,7 +197,7 @@
     </div><!--end of container -->
     <div class="footer"><!-- footer -->
       <span>le Cochon de Fer</span>
-      <span class="date">2010</span>
+      <span class="copyright">Copyright 2010 | le Cochon de Fer | @ Royal Plantation, Bahamas</span>
       <p>...qui va faire cochon</p>
     </div> <!-- end of footer -->
 
@@ -219,7 +215,7 @@
         <span><img src="http://www.worldallergy.org/UserFiles/fare.png" /></span>
         <% } %>
         <% if (favorite) { %>
-        <span><img src="http://icongal.com/gallery/image/331385/etoile_yellow_gold_star.png" /></span>
+        <span><img src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-natural-wonders/049081-3d-transparent-glass-icon-natural-wonders-star8-sc48.png" /></span>
         <% } %>
         <% if (spicy) { %>
         <span><img src="https://lh5.ggpht.com/k2lsRAvGdfkg9-S2uzDXKyOjpbVYRGvFwWkNqpRSMEJSQdvonXwjwWst-eEacgAxY9OW=w300" /></span>
@@ -245,7 +241,7 @@
         <span><img src="http://www.worldallergy.org/UserFiles/fare.png" /></span>
         <% } %>
         <% if (favorite) { %>
-        <span><img src="http://icongal.com/gallery/image/331385/etoile_yellow_gold_star.png" /></span>
+        <span><img src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-natural-wonders/049081-3d-transparent-glass-icon-natural-wonders-star8-sc48.png" /></span>
         <% } %>
         <% if (spicy) { %>
         <span><img src="https://lh5.ggpht.com/k2lsRAvGdfkg9-S2uzDXKyOjpbVYRGvFwWkNqpRSMEJSQdvonXwjwWst-eEacgAxY9OW=w300" /></span>

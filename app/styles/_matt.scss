@@ -83,6 +83,7 @@ $newsBoxes: HSLA(0, 0%, 92%, 1);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 2em;
   }
   .contactInfo { /* information under map */
     width: 100%;
@@ -127,25 +128,34 @@ a.trigger{
   display:block;
   float:right;
   /*border-style:solid;*/
-  border-width:1px;
+  /* border-width:1px; */
   width:20%;
   text-align:center;
 
-  h4{
-    font-size:30px;
-    margin-top:0;
-    margin-bottom:0;
+  h4 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
 
   }
-  .foodImgList{
-    padding:0;
-  .foodImg{
-    height:200px;
-    width:200px;
+  .foodImgList {
+    padding: 0;
+  .foodImg {
+    height: 200px;
+    width: 200px;
     border: 1px solid $border;
-    display:block;
-    float:right;
-    margin-bottom:25px;
+    display: block;
+    float: right;
+    margin-bottom: 25px;
     }
+  }
+}
+.commentsCont{
+  overflow:auto;
+  margin-left:-30em;
+  .commentForm{
+    float:left;
+    margin-top:30px;
+
   }
 }

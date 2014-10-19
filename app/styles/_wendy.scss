@@ -5,7 +5,7 @@ $red: HSLA(0, 100%, 34%, 1);
 
 .leftStoryboard {
   position: relative;
-  height: 700px;
+  height: 128em;
   clear: both;
   width: 70%;
   margin: 25px 0;
@@ -14,27 +14,31 @@ $red: HSLA(0, 100%, 34%, 1);
 }
 .content img{
   -webkit-filter: grayscale(100%);
-  width: 60%;
   position: relative;
   transition: width .6s;
-  box-shadow: 3px 3px 3px $charcoal;
-  &:hover {
-    width: 70%;
-  }
+  //box-shadow: 3px 3px 3px $charcoal;
 }
+
+.storyImages {
+  -webkit-filter: grayscale(100%);
+  position: relative;
+  width: 75%;
+}
+
 .ourStory, .menu, .reservations, .comments {
   float: left;
 }
 
 .ourStory label, .menu label, .reservations label, .comments label {
-  padding: 7px;
-  border: 1.5px solid $border;
+  padding: 1em;
+  /* border: 1.5px solid \$border; */
   margin-left: -1px;
   position: relative;
   left: 1px;
   font-family: 'Merriweather', serif;
   color: $red;
   font-size: 2.5em;
+  cursor: pointer;
 }
 
 .ourStory [type=radio] {
