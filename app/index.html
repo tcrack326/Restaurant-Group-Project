@@ -30,7 +30,7 @@
       <div class=topSpot>
       </div>
       <div class="logo">
-        <div id="flyingPig"></div><h1>le Cochon de Fer</h1>
+        <div id="flyingPig" class="flyingPig"></div><div id="flyingPig2" class="flyingPig"></div><h1>le Cochon de Fer</h1>
       </div>
       <div class="socialMedia">
         <ul>
@@ -169,21 +169,26 @@
           <div class="comments">
             <input type="radio" id="tab-4" name="tab-group-1">
               <label for="tab-4">Comments</label>
-              <div class="commentsCont hide">
-                <form class="commentForm" method='post'>
 
-                  NAME: <input type='text' name='name' id='name' /><br />
 
-                  Email: <input type='text' name='email' id='email' /><br />
 
-                  Comment:<br />
-                  <textarea name='comment' id='comment' /></textarea><br />
+              <div id="disqus_thread"></div>
+            <!--   <div class="commentsCont hide">
+              <form method='post'>
+>>>>>>> c0a0e2a73ba50fcd9251e8752188a31baf4476e5
 
-                  <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+                NAME: <input type='text' name='name' id='name' /><br />
 
-                  <input type='submit' value='Submit' />
-                </form>
-              </div>
+                Email: <input type='text' name='email' id='email' /><br />
+
+                Comment:<br />
+                <textarea name='comment' id='comment' /></textarea><br />
+
+                <input type='hidden' name='articleid' id='articleid' value='<? echo \$_GET["id"]; ?>' />
+
+                <input type='submit' value='Submit' />
+              </form>
+            </div> -->
 
           </div>
 

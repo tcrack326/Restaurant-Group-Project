@@ -13,7 +13,7 @@ request photos from Flickr
 var getMyFavs = "flickr.favorites.getList";
 
 //Url for request - api key and token user are for user tmccracken209 - FOR FUTURE USE HIDE OR REMOVE - DO NOT MAKE PUBLIC!!! For json data from flickr: &format=json&nojsoncallback=1
-var flickrUrl = "https://api.flickr.com/services/rest/?method=" + getMyFavs + "&api_key=46dcb38976ef086acdb22225643afd13&format=json&nojsoncallback=1&auth_token=72157648809402812-fe637688a179ddcf&api_sig=010f1f46e4ce86025d7ea0c83451844d";
+var flickrUrl = "https://api.flickr.com/services/rest/?method=" + getMyFavs + "&api_key=8c0a03e678f636644357f9ac9cf7e49f&format=json&nojsoncallback=1&auth_token=72157648448595828-81bf56c93a297a32&api_sig=8e1b6f49ffde848689c1a2ff1cdfb45e";
 
 //make the AJAX call with jQuery
 var flickrPhotos = $.ajax({
@@ -44,7 +44,7 @@ var flickrPhotos = $.ajax({
 });
 
 //=========================================================================
-//Make the pig fly around the mouse cursor!!!
+//Make the pig fly around the mouse cursor!!! currently not working :(
 //=========================================================================
 var x, y, offsetX, offsetY, newX, newY;
 //set up recursive function to apply some offsets every second to make the pig hover around!!!!!!
@@ -56,16 +56,16 @@ setTimeout(getRandomPosition, 1000);
 //start it!
 //getRandomPosition();
 
-$('*').mouseover(function(e) {
-
-x = e.pageX;
-y = e.pageY;
-
-newX = x;
-newY = y;
+// $(document).mouseover(function(e) {
+//
+// x = e.pageX;
+// y = e.pageY;
+//
+// newX = x;
+// newY = y;
 
 //$("#flyingPig").css({left:newX,top:newY});
-});
+//});
 
 
 
