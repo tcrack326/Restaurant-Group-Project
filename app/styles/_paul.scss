@@ -94,6 +94,7 @@ h2 {
   padding-bottom: 10px;
   clear: both;
   font-family: 'Tangerine', cursive, serif;
+  margin-top:0px;
 }
 h3 {
   font-size: 4.5em;
@@ -145,9 +146,10 @@ h3 {
 .foodStats {
   max-width: 35%;
   display: inline-block;
-  padding: 0% 2%;
+  //padding: 0% 2%;
+  padding-left:.5em;
   img {
-    width: 20px;
+    width: 3em;
     padding-left: 1%;
   }
 }

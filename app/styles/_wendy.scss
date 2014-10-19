@@ -14,12 +14,12 @@ $red: HSLA(0, 100%, 34%, 1);
 }
 .content img{
   -webkit-filter: grayscale(100%);
-  width: 60%;
+
   position: relative;
   transition: width .6s;
-  box-shadow: 3px 3px 3px $charcoal;
+  //box-shadow: 3px 3px 3px $charcoal;
   &:hover {
-    width: 70%;
+    width: 3.5em;
   }
 }
 .ourStory, .menu, .reservations, .comments {
