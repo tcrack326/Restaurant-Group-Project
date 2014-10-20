@@ -213,42 +213,41 @@
   </div>
   <div class="foodStats">
         <% if (allergies) { %>
-        <span><img src="http://www.worldallergy.org/UserFiles/fare.png" /></span>
+        <span><img src="http://www.worldallergy.org/UserFiles/fare.png" title="Allergies Warning!"/></span>
         <% } %>
         <% if (favorite) { %>
-        <span><img src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-natural-wonders/049081-3d-transparent-glass-icon-natural-wonders-star8-sc48.png" /></span>
+        <span><img src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-natural-wonders/049081-3d-transparent-glass-icon-natural-wonders-star8-sc48.png" title="A Favorite of Ours!"/></span>
         <% } %>
         <% if (spicy) { %>
-        <span><img src="https://lh5.ggpht.com/k2lsRAvGdfkg9-S2uzDXKyOjpbVYRGvFwWkNqpRSMEJSQdvonXwjwWst-eEacgAxY9OW=w300" /></span>
+        <span><img src="https://lh5.ggpht.com/k2lsRAvGdfkg9-S2uzDXKyOjpbVYRGvFwWkNqpRSMEJSQdvonXwjwWst-eEacgAxY9OW=w300" title="Warning Spicy!" /></span>
         <% } %>
         <% if (vegan) { %>
-        <span><img src="https://lh6.googleusercontent.com/-EjKH80IuDFc/AAAAAAAAAAI/AAAAAAAAAAA/I-7eTdggvI8/photo.jpg" /></span>
+        <span><img src="https://lh6.googleusercontent.com/-EjKH80IuDFc/AAAAAAAAAAI/AAAAAAAAAAA/I-7eTdggvI8/photo.jpg" title="Vegan Friendly" /></span>
         <% } %>
   </div>
 </script>
 
 <script id="menuEntrees" type="text/template">
   <h3>
-  <span class="items"><%= item %></span>
-
+    <span class="items"><%= item %></span>
     <span class="prices"><%= price %></span>
   </h3>
 
   <div class="menuDesc">
     <p><%= description %></p>
   </div>
-  <div class="foodStats">
+  <div class="entreeStats">
         <% if (allergies) { %>
-        <span><img src="http://www.worldallergy.org/UserFiles/fare.png" /></span>
+        <span><img src="http://www.worldallergy.org/UserFiles/fare.png" title="Allergies Warning!"/></span>
         <% } %>
         <% if (favorite) { %>
-        <span><img src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-natural-wonders/049081-3d-transparent-glass-icon-natural-wonders-star8-sc48.png" /></span>
+        <span><img src="http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/3d-transparent-glass-icons-natural-wonders/049081-3d-transparent-glass-icon-natural-wonders-star8-sc48.png" title="A Favorite of Ours!"/></span>
         <% } %>
         <% if (spicy) { %>
-        <span><img src="https://lh5.ggpht.com/k2lsRAvGdfkg9-S2uzDXKyOjpbVYRGvFwWkNqpRSMEJSQdvonXwjwWst-eEacgAxY9OW=w300" /></span>
+        <span><img src="https://lh5.ggpht.com/k2lsRAvGdfkg9-S2uzDXKyOjpbVYRGvFwWkNqpRSMEJSQdvonXwjwWst-eEacgAxY9OW=w300" title="Warning Spicy!" /></span>
         <% } %>
         <% if (vegan) { %>
-        <span><img src="https://lh6.googleusercontent.com/-EjKH80IuDFc/AAAAAAAAAAI/AAAAAAAAAAA/I-7eTdggvI8/photo.jpg" /></span>
+        <span><img src="https://lh6.googleusercontent.com/-EjKH80IuDFc/AAAAAAAAAAI/AAAAAAAAAAA/I-7eTdggvI8/photo.jpg" title="Vegan Friendly"/></span>
         <% } %>
   </div>
 </script>
