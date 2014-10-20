@@ -2,10 +2,10 @@
 
 The following students participated in this project.
 
+* Matthew Griffith - https://github.com/mgriffeth
+* Paul Park - https://github.com/ppark482
 * Thomas McCracken - http://github.com/tcrack326
-* Name 2 - http://link_to_github_profile
-* Name 3 - http://link_to_github_profile
-* Name 4 - http://link_to_github_profile
+* Wendy Nichols - https://github.com/wendynichols
 
 ## We used three API's to create this site
 
@@ -18,8 +18,3 @@ The following students participated in this project.
 ## Disclaimer
 
 This project is fictional. There is no real client. Any similarity is purely a coincidence.
-
-
-## Other Resources
-
-_List any other resources you may use in this project._
