@@ -1,13 +1,12 @@
-## The Iron Yard : Group Project
+# Le Cochon de Fer Restaurant Website
 
-The following students participated in this project.
-
+## Contributors
 * Matthew Griffith - https://github.com/mgriffeth
 * Paul Park - https://github.com/ppark482
 * Thomas McCracken - http://github.com/tcrack326
 * Wendy Nichols - https://github.com/wendynichols
 
-## We used three API's to create this site
+## API's Used:
 
 1. Flickr's [Photo API](https://www.flickr.com/services/api/)
 2. Google Maps [Embed API](https://developers.google.com/maps/documentation/embed/)
